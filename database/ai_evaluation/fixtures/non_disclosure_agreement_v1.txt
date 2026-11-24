@@ -1,0 +1,29 @@
+MUTUAL NON-DISCLOSURE AGREEMENT (v1)
+
+This Mutual Non-Disclosure Agreement ("Agreement") is dated as of March 1, 2024 ("Effective Date"), by and between Apex Biotech Ltd., an English corporation having its office at 14 Science Park, Cambridge, CB4 0EY, UK ("Apex"), and Zenith Pharma LLC, a Delaware corporation having its office at 800 BioPark Way, Boston, MA 02115, USA ("Zenith").
+
+1. PURPOSE
+The parties wish to explore a potential business partnership regarding monoclonal antibody formulation and drug delivery systems ("Purpose").
+
+2. CONFIDENTIAL INFORMATION
+"Confidential Information" means all non-public scientific, commercial, clinical, and financial information disclosed by one party ("Disclosing Party") to the other party ("Receiving Party"), whether orally, visually, or in writing, marked as confidential or reasonably understood to be proprietary.
+
+3. EXCLUSIONS
+Confidential Information does not include information that:
+(a) is or becomes publicly known through no breach by Receiving Party;
+(b) was already known to Receiving Party prior to disclosure;
+(c) is independently developed without reference to Disclosing Party's Confidential Information; or
+(d) is rightfully received from a third party without obligation of confidentiality.
+
+4. OBLIGATIONS AND TERM
+4.1 Receiving Party shall protect Confidential Information with the same degree of care it uses for its own confidential information, but not less than reasonable care.
+4.2 Receiving Party shall disclose Confidential Information only to employees, contractors, and legal advisors who need to know for the Purpose and who are bound by confidentiality obligations.
+4.3 The obligations of confidentiality shall endure for a period of three (3) years from the Effective Date.
+
+5. GOVERNING LAW
+This Agreement shall be governed by the laws of the State of New York, USA.
+
+APEX BIOTECH LTD.
+By: Dr. Alistair Finch, VP of Business Development
+ZENITH PHARMA LLC
+By: Dr. Rachel Vance, Chief Scientific Officer

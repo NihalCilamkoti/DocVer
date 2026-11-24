@@ -1,0 +1,2422 @@
+[
+    {
+        "id": "INST-001",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names.",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-002",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table.",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-003",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-004",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences.",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-005",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-006",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-007",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences.",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-008",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-009",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\".",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-010",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-011",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 2)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-012",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-013",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-014",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-015",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-016",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-017",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 2)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-018",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-019",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-020",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-021",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 3)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-022",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-023",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-024",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-025",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-026",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-027",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 3)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-028",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-029",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-030",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-031",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 4)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-032",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-033",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-034",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-035",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-036",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-037",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 4)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-038",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-039",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-040",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-041",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 5)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-042",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-043",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-044",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-045",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-046",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-047",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 5)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-048",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-049",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-050",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-051",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 6)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-052",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-053",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-054",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-055",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-056",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-057",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 6)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-058",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-059",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-060",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-061",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 7)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-062",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-063",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-064",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-065",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-066",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-067",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 7)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-068",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-069",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-070",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-071",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 8)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-072",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-073",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-074",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-075",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-076",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-077",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 8)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-078",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-079",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-080",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-081",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 9)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-082",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-083",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-084",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-085",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-086",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-087",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 9)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-088",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-089",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-090",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-091",
+        "category": "output_format_instruction_following",
+        "input": "Give me only the names. (Constraint Batch 10)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_names",
+        "expected_answer": {
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma"
+            ],
+            "not_contains": [
+                "responsibilities",
+                "background",
+                "recommendations",
+                "executive summary"
+            ],
+            "strict_format": "only_names"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-092",
+        "category": "output_format_instruction_following",
+        "input": "Show the differences in a table. (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "format_markdown_table",
+        "expected_answer": {
+            "contains": [
+                "|"
+            ],
+            "not_contains": [
+                "Overall, this agreement",
+                "In summary",
+                "We recommend"
+            ],
+            "strict_format": "format_markdown_table"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-093",
+        "category": "output_format_instruction_following",
+        "input": "Explain this in simple English. (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "simple_language",
+        "expected_answer": {
+            "contains": [
+                "agreement",
+                "services",
+                "provider"
+            ],
+            "not_contains": [
+                "stipulated herein",
+                "indicia"
+            ],
+            "strict_format": "simple_language"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-094",
+        "category": "output_format_instruction_following",
+        "input": "Give me only numerical differences. (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "only_numerical",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "not_contains": [
+                "In conclusion",
+                "Moreover",
+                "strategic advice"
+            ],
+            "strict_format": "only_numerical"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-095",
+        "category": "output_format_instruction_following",
+        "input": "Make it shorter. (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "make_shorter",
+        "expected_answer": {
+            "contains": [
+                "Acme"
+            ],
+            "not_contains": [
+                "unnecessary preamble",
+                "furthermore"
+            ],
+            "strict_format": "make_shorter"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-096",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 3 bullet points. (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_bullets:3",
+        "expected_answer": {
+            "contains": [
+                "- "
+            ],
+            "not_contains": [
+                "executive summary",
+                "conclusion"
+            ],
+            "strict_format": "exact_bullets:3"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-097",
+        "category": "output_format_instruction_following",
+        "input": "Answer in exactly 2 complete sentences. (Constraint Batch 10)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "exact_sentences:2",
+        "expected_answer": {
+            "contains": [
+                "Nihal"
+            ],
+            "not_contains": [
+                "#",
+                "|"
+            ],
+            "strict_format": "exact_sentences:2"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-098",
+        "category": "output_format_instruction_following",
+        "input": "Answer ONLY Yes or No: Is the 2025 MSA governed by California law? (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "yes_no_only",
+        "expected_answer": {
+            "contains": [
+                "Yes"
+            ],
+            "not_contains": [
+                "However",
+                "Furthermore",
+                "On the other hand",
+                "It is important to note"
+            ],
+            "strict_format": "yes_no_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-099",
+        "category": "output_format_instruction_following",
+        "input": "Output valid JSON only with keys \"document\" and \"effective_date\". (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "json_only",
+        "expected_answer": {
+            "contains": [
+                "document"
+            ],
+            "not_contains": [
+                "Here is the JSON:"
+            ],
+            "strict_format": "json_only"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    },
+    {
+        "id": "INST-100",
+        "category": "output_format_instruction_following",
+        "input": "Do not summarize. Give me only the payment terms. (Constraint Batch 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "instruction_following",
+        "constraint_type": "forbid_summary",
+        "expected_answer": {
+            "contains": [
+                "Net 30"
+            ],
+            "not_contains": [
+                "Summary of Document",
+                "Executive Overview",
+                "General background"
+            ],
+            "strict_format": "forbid_summary"
+        },
+        "evaluation_method": "instruction_following_compliance",
+        "failure_category": "instruction_following_failure"
+    }
+]

@@ -1,0 +1,4132 @@
+[
+    {
+        "id": "NL-001",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-002",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc a plzz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-003",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-004",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-005",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-006",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-007",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-008",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-009",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-010",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-011",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-012",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-013",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-014",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc a ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-015",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-016",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-017",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-018",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-019",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-020",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-021",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-022",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc A plzz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-023",
+        "category": "nl_spelling_variations",
+        "input": "can u summaryze doc b in simple english ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-024",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-025",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-026",
+        "category": "nl_spelling_variations",
+        "input": "wat r the responsabilities of samantha reed? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-027",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-028",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-029",
+        "category": "nl_spelling_variations",
+        "input": "giv me only the names in the directry ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-030",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-031",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-032",
+        "category": "nl_spelling_variations",
+        "input": "explain indemnifcation in simle terms ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-033",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-034",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc A",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-035",
+        "category": "nl_spelling_variations",
+        "input": "how much is year 1 contract valu capped at? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-036",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-037",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-038",
+        "category": "nl_spelling_variations",
+        "input": "who is in chrg of kubernetes and terraform? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-039",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-040",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-041",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of nihal in docuement b ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-042",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, whos the ceo in doc A plzz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-043",
+        "category": "nl_spelling_variations",
+        "input": "can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-044",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-045",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, give me only ammounts and dates from doc 1",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-046",
+        "category": "nl_spelling_variations",
+        "input": "wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-047",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-048",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, make it shorter pls without chnging meaning",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-049",
+        "category": "nl_spelling_variations",
+        "input": "giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-050",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the california jurisdiciton? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-051",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, is ther any claise for non-solicitation in v1?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-052",
+        "category": "nl_spelling_variations",
+        "input": "explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-053",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-054",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, what is the effectiv date of doc A",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-055",
+        "category": "nl_spelling_variations",
+        "input": "how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-056",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-057",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, dont summarize just giv me payment termz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-058",
+        "category": "nl_spelling_variations",
+        "input": "who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-059",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for nexus financial? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-060",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, when does phase 5 go live happen?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-061",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-062",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc a plzz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-063",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-064",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-065",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-066",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-067",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-068",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-069",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-070",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-071",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-072",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-073",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-074",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc a ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-075",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-076",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-077",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-078",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-079",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-080",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-081",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-082",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc A plzz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-083",
+        "category": "nl_spelling_variations",
+        "input": "can u summaryze doc b in simple english ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-084",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-085",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-086",
+        "category": "nl_spelling_variations",
+        "input": "wat r the responsabilities of samantha reed? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-087",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-088",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-089",
+        "category": "nl_spelling_variations",
+        "input": "giv me only the names in the directry ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-090",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-091",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-092",
+        "category": "nl_spelling_variations",
+        "input": "explain indemnifcation in simle terms ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-093",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-094",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc A",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-095",
+        "category": "nl_spelling_variations",
+        "input": "how much is year 1 contract valu capped at? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-096",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-097",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-098",
+        "category": "nl_spelling_variations",
+        "input": "who is in chrg of kubernetes and terraform? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-099",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-100",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-101",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of nihal in docuement b ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-102",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, whos the ceo in doc A plzz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-103",
+        "category": "nl_spelling_variations",
+        "input": "can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-104",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-105",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, give me only ammounts and dates from doc 1",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-106",
+        "category": "nl_spelling_variations",
+        "input": "wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-107",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-108",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, make it shorter pls without chnging meaning",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-109",
+        "category": "nl_spelling_variations",
+        "input": "giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-110",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the california jurisdiciton? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-111",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, is ther any claise for non-solicitation in v1?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-112",
+        "category": "nl_spelling_variations",
+        "input": "explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-113",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-114",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, what is the effectiv date of doc A",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-115",
+        "category": "nl_spelling_variations",
+        "input": "how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-116",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-117",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, dont summarize just giv me payment termz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-118",
+        "category": "nl_spelling_variations",
+        "input": "who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-119",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for nexus financial? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-120",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, when does phase 5 go live happen?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-121",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-122",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc a plzz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-123",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-124",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-125",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-126",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-127",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-128",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-129",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-130",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-131",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-132",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-133",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-134",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc a ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-135",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-136",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-137",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-138",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-139",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-140",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-141",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-142",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc A plzz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-143",
+        "category": "nl_spelling_variations",
+        "input": "can u summaryze doc b in simple english ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-144",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-145",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-146",
+        "category": "nl_spelling_variations",
+        "input": "wat r the responsabilities of samantha reed? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-147",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-148",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-149",
+        "category": "nl_spelling_variations",
+        "input": "giv me only the names in the directry ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-150",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-151",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-152",
+        "category": "nl_spelling_variations",
+        "input": "explain indemnifcation in simle terms ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-153",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-154",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc A",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-155",
+        "category": "nl_spelling_variations",
+        "input": "how much is year 1 contract valu capped at? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-156",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-157",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-158",
+        "category": "nl_spelling_variations",
+        "input": "who is in chrg of kubernetes and terraform? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-159",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-160",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-161",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of nihal in docuement b ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-162",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, whos the ceo in doc A plzz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-163",
+        "category": "nl_spelling_variations",
+        "input": "can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-164",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-165",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, give me only ammounts and dates from doc 1",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-166",
+        "category": "nl_spelling_variations",
+        "input": "wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-167",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-168",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, make it shorter pls without chnging meaning",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-169",
+        "category": "nl_spelling_variations",
+        "input": "giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-170",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the california jurisdiciton? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-171",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, is ther any claise for non-solicitation in v1?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-172",
+        "category": "nl_spelling_variations",
+        "input": "explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-173",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-174",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, what is the effectiv date of doc A",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-175",
+        "category": "nl_spelling_variations",
+        "input": "how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-176",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-177",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, dont summarize just giv me payment termz",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-178",
+        "category": "nl_spelling_variations",
+        "input": "who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-179",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for nexus financial? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-180",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, when does phase 5 go live happen?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-181",
+        "category": "nl_spelling_variations",
+        "input": "whats the role of Nihal in docuement B",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-182",
+        "category": "nl_spelling_variations",
+        "input": "whos the ceo in doc a plzz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "miller",
+                "elena",
+                "jonathan"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-183",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, can u summaryze doc B in simple english",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "target_slot": "B",
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-184",
+        "category": "nl_spelling_variations",
+        "input": "show me all numerical differneces betwen both files",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "30",
+                "60"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-185",
+        "category": "nl_spelling_variations",
+        "input": "give me only ammounts and dates from doc 1 ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "30",
+                "12"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-186",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, wat r the responsabilities of Samantha Reed?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "samantha",
+                "qa"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-187",
+        "category": "nl_spelling_variations",
+        "input": "wats the liabilty cap in agreemnt 2024",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "500,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-188",
+        "category": "nl_spelling_variations",
+        "input": "make it shorter pls without chnging meaning ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "rewrite_preservation",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "acme",
+                "cloudtech"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-189",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, giv me only the names in the directry",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "key_entities",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "nihal",
+                "priya"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-190",
+        "category": "nl_spelling_variations",
+        "input": "which docuement mentions the California jurisdiciton?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_attribution",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "california"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-191",
+        "category": "nl_spelling_variations",
+        "input": "is ther any claise for non-solicitation in v1? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "non-solicitation"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-192",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, explain indemnifcation in simle terms",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "protect",
+                "loss",
+                "harm",
+                "third-party"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-193",
+        "category": "nl_spelling_variations",
+        "input": "count the core membrs in the teem list",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "5",
+                "five"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-194",
+        "category": "nl_spelling_variations",
+        "input": "what is the effectiv date of doc a ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": "A",
+            "contains": [
+                "january 15, 2024"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-195",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, how much is year 1 contract valu capped at?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "450,000"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-196",
+        "category": "nl_spelling_variations",
+        "input": "show diffrnces in a table format only",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "|"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-197",
+        "category": "nl_spelling_variations",
+        "input": "dont summarize just giv me payment termz ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "clause_comparison",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "net 30"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-198",
+        "category": "nl_spelling_variations",
+        "input": "Hey bot, who is in chrg of kubernetes and terraform?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "role_and_task_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "alex"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-199",
+        "category": "nl_spelling_variations",
+        "input": "wats the audit opnion for Nexus Financial?",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "unqualified",
+                "ernst"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    },
+    {
+        "id": "NL-200",
+        "category": "nl_spelling_variations",
+        "input": "when does phase 5 go live happen? ??",
+        "relevant_context": null,
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "target_slot": null,
+            "contains": [
+                "october 15, 2025"
+            ],
+            "tolerates_typos": true
+        },
+        "evaluation_method": "intent_and_keyword_match",
+        "failure_category": "intent_classification_failure"
+    }
+]

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>app</directory>
+        </include>
+    </source>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="APP_MAINTENANCE_DRIVER" value="file"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_STORE" value="array"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="PULSE_ENABLED" value="false"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+        <env name="AI_PRIMARY_PROVIDER" value="groq"/>
+        <env name="AI_FALLBACK_ORDER" value="groq,openrouter,gemini"/>
+        <env name="GROQ_ENABLED" value="true"/>
+        <env name="OPENROUTER_ENABLED" value="true"/>
+        <env name="GEMINI_ENABLED" value="true"/>
+        <env name="GROQ_MODEL" value="openai/gpt-oss-20b"/>
+        <env name="GROQ_FAST_MODEL" value="openai/gpt-oss-20b"/>
+        <env name="GROQ_REASONING_MODEL" value="openai/gpt-oss-120b"/>
+        <env name="GEMINI_MODEL" value="gemini-3.8-flash"/>
+        <env name="GEMINI_REASONING_MODEL" value="gemini-3.8-flash"/>
+        <env name="OPENROUTER_MODEL" value="openai/gpt-4o-mini"/>
+    </php>
+</phpunit>

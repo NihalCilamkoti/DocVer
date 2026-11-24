@@ -1,0 +1,1152 @@
+[
+    {
+        "id": "MEM-001",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-002",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-003",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-004",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-005",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-006",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-007",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-008",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-009",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-010",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-011",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-012",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-013",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-014",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-015",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-016",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-017",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-018",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-019",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-020",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-021",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-022",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-023",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-024",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-025",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-026",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-027",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-028",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-029",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-030",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-031",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-032",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-033",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-034",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-035",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-036",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-037",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-038",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-039",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-040",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-041",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-042",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-043",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-044",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-045",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-046",
+        "category": "multi_turn_conversation",
+        "input": "Make it shorter without changing its meaning.",
+        "prior_turn": {
+            "user": "Summarize the 2024 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech"
+            ],
+            "criterion": "shorter_length_and_preserved_facts"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-047",
+        "category": "multi_turn_conversation",
+        "input": "Show only numerical differences.",
+        "prior_turn": {
+            "user": "Compare the 2024 MSA and 2025 MSA.",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "30",
+                "60"
+            ],
+            "criterion": "only_numerical_no_prose"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-048",
+        "category": "multi_turn_conversation",
+        "input": "What are the specific responsibilities of the second person?",
+        "prior_turn": {
+            "user": "List the team members from the directory.",
+            "assistant_context": "Context from team_roles_and_responsibilities.txt"
+        },
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "Priya"
+            ],
+            "criterion": "reference_resolution_priya_sharma"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-049",
+        "category": "multi_turn_conversation",
+        "input": "What about Document B (2025 MSA)?",
+        "prior_turn": {
+            "user": "What is the liability cap in Document A (2024 MSA)?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "1,000,000"
+            ],
+            "criterion": "slot_resolution_to_slot_b"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    },
+    {
+        "id": "MEM-050",
+        "category": "multi_turn_conversation",
+        "input": "Did they change in 2025?",
+        "prior_turn": {
+            "user": "What are the payment terms in the 2024 agreement?",
+            "assistant_context": "Context from master_services_agreement_2024.txt, master_services_agreement_2025.txt"
+        },
+        "relevant_context": "Document: master_services_agreement_2024.txt, master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "multi_turn_continuation",
+        "expected_answer": {
+            "contains": [
+                "60"
+            ],
+            "criterion": "contextual_follow_up"
+        },
+        "evaluation_method": "multi_turn_state_validation",
+        "failure_category": "context_loss"
+    }
+]

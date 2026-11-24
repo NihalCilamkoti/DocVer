@@ -1,0 +1,148 @@
+version: '3.8'
+
+services:
+  # Next.js 15 Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../infrastructure/docker/frontend/Dockerfile
+    container_name: docver-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8080/api/v1
+      - NODE_ENV=production
+    networks:
+      - docver-net
+    depends_on:
+      - nginx
+
+  # Nginx Gateway & Static Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: docver-nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./backend:/var/www/html:ro
+      - ./infrastructure/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - docver-net
+    depends_on:
+      - app
+
+  # Laravel Backend (PHP 8.3 FPM)
+  app:
+    build:
+      context: ./backend
+      dockerfile: ../infrastructure/docker/backend/Dockerfile
+    container_name: docver-app
+    restart: unless-stopped
+    volumes:
+      - ./backend:/var/www/html
+    environment:
+      - APP_ENV=production
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=docver_db
+      - DB_USERNAME=docver
+      - DB_PASSWORD=docver_secret
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=redis_secret
+      - QUEUE_CONNECTION=redis
+      - CACHE_STORE=redis
+    networks:
+      - docver-net
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # Document Processing Worker
+  worker-documents:
+    build:
+      context: ./backend
+      dockerfile: ../infrastructure/docker/backend/Dockerfile
+    container_name: docver-worker-documents
+    restart: unless-stopped
+    command: php /var/www/html/artisan queue:work redis --queue=document-validation,document-extraction,document-ocr,document-chunking,document-indexing --sleep=3 --tries=2 --timeout=180 --memory=512
+    volumes:
+      - ./backend:/var/www/html
+    environment:
+      - APP_ENV=production
+      - DB_HOST=db
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=redis_secret
+    networks:
+      - docver-net
+    depends_on:
+      - app
+
+  # AI Orchestration Worker / Horizon
+  worker-ai:
+    build:
+      context: ./backend
+      dockerfile: ../infrastructure/docker/backend/Dockerfile
+    container_name: docver-worker-ai
+    restart: unless-stopped
+    command: php /var/www/html/artisan horizon
+    volumes:
+      - ./backend:/var/www/html
+    environment:
+      - APP_ENV=production
+      - DB_HOST=db
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=redis_secret
+    networks:
+      - docver-net
+    depends_on:
+      - app
+
+  # MySQL Database (8.0)
+  db:
+    image: mysql:8.0
+    container_name: docver-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_secret_password
+      MYSQL_DATABASE: docver_db
+      MYSQL_USER: docver
+      MYSQL_PASSWORD: docver_secret
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./infrastructure/mysql/my.cnf:/etc/mysql/conf.d/my.cnf:ro
+    networks:
+      - docver-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis (7.x Alpine)
+  redis:
+    image: redis:7-alpine
+    container_name: docver-redis
+    restart: unless-stopped
+    command: redis-server --requirepass redis_secret --appendonly yes
+    volumes:
+      - redis-data:/data
+      - ./infrastructure/redis/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    networks:
+      - docver-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "redis_secret", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  docver-net:
+    driver: bridge
+
+volumes:
+  db-data:
+  redis-data:

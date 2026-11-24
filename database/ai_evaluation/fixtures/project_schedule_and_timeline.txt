@@ -1,0 +1,43 @@
+DOCVER PLATFORM - PROJECT SCHEDULE AND MILESTONES 2025
+Document Ref: DOC-SCH-2025-V3 | Project Manager: Priya Sharma
+
+1. PROJECT OVERVIEW
+This document outlines the key milestones, release schedules, deliverables, and resource allocations for the DocVer 2.0 Enterprise Release.
+
+2. PHASE TIMELINE & KEY DATES
+- Phase 1: Core Architecture & Intent Engine Redesign
+  * Start Date: January 6, 2025
+  * Completion Date: March 14, 2025
+  * Key Deliverable: Multi-provider failover router (Gemini, Groq, OpenRouter) and ephemeral indexing pipeline.
+  * Milestone Review: March 17, 2025 (Status: Completed).
+
+- Phase 2: User Interface & Side-by-Side Diff Engine
+  * Start Date: March 24, 2025
+  * Completion Date: June 20, 2025
+  * Key Deliverable: Interactive React comparison view, citation hovering, and instant navigation anchors.
+  * Milestone Review: June 23, 2025 (Status: Completed).
+
+- Phase 3: Enterprise Security & Zero-Storage Compliance
+  * Start Date: July 7, 2025
+  * Completion Date: August 29, 2025
+  * Key Deliverable: Ephemeral disk purging after indexing, SOC 2 certification preparation, encryption at rest.
+  * Milestone Review: September 2, 2025 (Status: Completed).
+
+- Phase 4: Full Regression Testing & AI Accuracy Evaluation
+  * Start Date: September 8, 2025
+  * Completion Date: October 3, 2025
+  * Key Deliverable: 1,150 automated test dataset execution, Admin evaluation dashboard, zero hallucination guardrails.
+  * Milestone Review: October 6, 2025 (Status: In Progress).
+
+- Phase 5: Production Deployment & Global Go-Live
+  * Staging Verification: October 8, 2025
+  * Security Freeze: October 12, 2025
+  * Official Go-Live Date: October 15, 2025 at 04:00 UTC.
+
+3. BUDGET AND RESOURCE ALLOCATION
+- Phase 1 Budget: $120,000 USD
+- Phase 2 Budget: $185,000 USD
+- Phase 3 Budget: $95,000 USD
+- Phase 4 Budget: $65,000 USD
+- Phase 5 Budget: $35,000 USD
+- Total Allocated Project Budget: $500,000 USD.

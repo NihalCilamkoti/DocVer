@@ -1,0 +1,752 @@
+[
+    {
+        "id": "UPL-001",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-002",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-003",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-004",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-005",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-006",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-007",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-008",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-009",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-010",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-011",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-012",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-013",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-014",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-015",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-016",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-017",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-018",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-019",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-020",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-021",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-022",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-023",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-024",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-025",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-026",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-027",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-028",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-029",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-030",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-031",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-032",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-033",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-034",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-035",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-036",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-037",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-038",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-039",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-040",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-041",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-042",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-043",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-044",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-045",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    },
+    {
+        "id": "UPL-046",
+        "category": "upload_processing_failure",
+        "input": "Upload file: corrupted_binary.pdf",
+        "fixture_file": "corrupted_binary.pdf",
+        "failure_mode": "corrupted_pdf",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Corrupted document cannot be parsed into text.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "processing_failure"
+    },
+    {
+        "id": "UPL-047",
+        "category": "upload_processing_failure",
+        "input": "Upload file: empty_file.txt",
+        "fixture_file": "empty_file.txt",
+        "failure_mode": "empty_file",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "Uploaded document contains no text content.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "empty_content"
+    },
+    {
+        "id": "UPL-048",
+        "category": "upload_processing_failure",
+        "input": "Upload file: unsupported_format.exe",
+        "fixture_file": "unsupported_format.exe",
+        "failure_mode": "unsupported_extension",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "The file format is not supported.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "unsupported_format"
+    },
+    {
+        "id": "UPL-049",
+        "category": "upload_processing_failure",
+        "input": "Upload file: oversized_file.pdf",
+        "fixture_file": "oversized_file.pdf",
+        "failure_mode": "file_exceeds_plan_limit",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 413,
+            "contains_error_message": "File size exceeds maximum allowed upload limit.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "oversized_file"
+    },
+    {
+        "id": "UPL-050",
+        "category": "upload_processing_failure",
+        "input": "Upload file: malformed_encoding.txt",
+        "fixture_file": "malformed_encoding.txt",
+        "failure_mode": "encoding_failure",
+        "expected_task": "upload_validation",
+        "expected_answer": {
+            "expected_status_code": 422,
+            "contains_error_message": "File contains invalid character encoding.",
+            "ready_status_reflects_failure": true
+        },
+        "evaluation_method": "http_and_status_validation",
+        "failure_category": "encoding_error"
+    }
+]

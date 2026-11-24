@@ -1,0 +1,2452 @@
+[
+    {
+        "id": "HALL-001",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-002",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-003",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)?",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-004",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-005",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-006",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule?",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-007",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-008",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-009",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-010",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-011",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-012",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 2)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-013",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 2)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-014",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-015",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 2)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-016",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 2)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-017",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 2)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-018",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 2)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-019",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-020",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 2)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-021",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-022",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 3)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-023",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 3)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-024",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-025",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 3)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-026",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 3)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-027",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 3)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-028",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 3)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-029",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-030",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 3)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-031",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-032",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 4)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-033",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 4)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-034",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-035",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 4)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-036",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 4)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-037",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 4)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-038",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 4)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-039",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-040",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 4)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-041",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-042",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 5)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-043",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 5)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-044",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-045",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 5)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-046",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 5)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-047",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 5)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-048",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 5)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-049",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-050",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 5)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-051",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-052",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 6)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-053",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 6)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-054",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-055",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 6)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-056",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 6)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-057",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 6)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-058",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 6)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-059",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-060",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 6)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-061",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-062",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 7)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-063",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 7)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-064",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-065",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 7)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-066",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 7)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-067",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 7)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-068",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 7)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-069",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-070",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 7)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-071",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-072",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 8)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-073",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 8)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-074",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-075",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 8)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-076",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 8)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-077",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 8)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-078",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 8)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-079",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-080",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 8)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-081",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-082",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 9)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-083",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 9)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-084",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-085",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 9)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-086",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 9)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-087",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 9)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-088",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 9)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-089",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-090",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 9)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-091",
+        "category": "hallucination_prevention",
+        "input": "What is the cryptocurrency payment clause in the 2024 MSA? (Hallucination Probe 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain",
+                "no cryptocurrency"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-092",
+        "category": "hallucination_prevention",
+        "input": "Who is the Chief Marketing Officer in the DocVer team directory? (Hallucination Probe 10)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not list",
+                "no Chief Marketing Officer"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-093",
+        "category": "hallucination_prevention",
+        "input": "What is the early termination penalty fee in the Mutual NDA (v1)? (Hallucination Probe 10)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify",
+                "no early termination fee"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-094",
+        "category": "hallucination_prevention",
+        "input": "What are the provisions regarding artificial intelligence patent assignment in the 2024 MSA? (Hallucination Probe 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-095",
+        "category": "hallucination_prevention",
+        "input": "What interest rate is charged on the 2035 bonds in the Nexus Financial statement? (Hallucination Probe 10)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no 2035 bonds",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-096",
+        "category": "hallucination_prevention",
+        "input": "What is the budget for Phase 6 in the Project Schedule? (Hallucination Probe 10)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "only 5 phases",
+                "does not exist"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-097",
+        "category": "hallucination_prevention",
+        "input": "What is the severance payment clause in the team roles directory? (Hallucination Probe 10)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-098",
+        "category": "hallucination_prevention",
+        "input": "What is the stock option vesting schedule for Marcus Vance? (Hallucination Probe 10)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not specify vesting"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-099",
+        "category": "hallucination_prevention",
+        "input": "What are the GDPR data transfer clauses to Australia in the 2024 MSA? (Hallucination Probe 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "does not contain"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "HALL-100",
+        "category": "hallucination_prevention",
+        "input": "What is the physical office address in Tokyo mentioned in the 2025 MSA? (Hallucination Probe 10)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "negative_constraint_qa",
+        "expected_answer": {
+            "must_acknowledge_absence": true,
+            "contains_at_least_one": [
+                "not mentioned",
+                "no Tokyo office"
+            ],
+            "forbidden_fabrications": [
+                "specifically states",
+                "guarantees that",
+                "provides a $"
+            ]
+        },
+        "evaluation_method": "hallucination_absence_check",
+        "failure_category": "hallucination_detected"
+    }
+]

@@ -1,0 +1,2232 @@
+[
+    {
+        "id": "SUMM-001",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-002",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025).",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-003",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points.",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-004",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration.",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-005",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles.",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-006",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release.",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-007",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement.",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-008",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-009",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA.",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-010",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-011",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-012",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 2)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-013",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 2)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-014",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 2)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-015",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 2)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-016",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 2)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-017",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 2)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-018",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-019",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 2)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-020",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 2)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-021",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-022",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 3)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-023",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 3)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-024",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 3)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-025",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 3)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-026",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 3)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-027",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 3)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-028",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-029",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 3)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-030",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 3)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-031",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-032",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 4)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-033",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 4)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-034",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 4)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-035",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 4)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-036",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 4)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-037",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 4)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-038",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-039",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 4)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-040",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 4)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-041",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-042",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 5)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-043",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 5)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-044",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 5)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-045",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 5)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-046",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 5)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-047",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 5)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-048",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-049",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 5)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-050",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 5)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-051",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-052",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 6)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-053",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 6)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-054",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 6)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-055",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 6)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-056",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 6)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-057",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 6)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-058",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-059",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 6)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-060",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 6)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-061",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-062",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 7)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-063",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 7)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-064",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 7)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-065",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 7)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-066",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 7)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-067",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 7)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-068",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-069",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 7)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-070",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 7)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-071",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-072",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 8)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-073",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 8)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-074",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 8)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-075",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 8)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-076",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 8)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-077",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 8)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-078",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-079",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 8)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-080",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 8)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-081",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-082",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 9)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-083",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 9)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-084",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 9)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-085",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 9)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-086",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 9)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-087",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 9)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-088",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-089",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 9)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-090",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 9)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-091",
+        "category": "document_summarization",
+        "input": "Summarize the Master Services Agreement (2024) highlighting parties, term, and liability. (Summary Case 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "12 months",
+                "$500,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-092",
+        "category": "document_summarization",
+        "input": "Provide an executive summary of the Master Services Agreement (2025). (Summary Case 10)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Acme",
+                "CloudTech",
+                "24 months",
+                "$1,000,000",
+                "California"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-093",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v1) in 3 bullet points. (Summary Case 10)",
+        "relevant_context": "Document: non_disclosure_agreement_v1.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "3 years",
+                "New York"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-094",
+        "category": "document_summarization",
+        "input": "Summarize the Mutual Non-Disclosure Agreement (v2) focusing on key changes and duration. (Summary Case 10)",
+        "relevant_context": "Document: non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Apex",
+                "Zenith",
+                "5 years",
+                "non-solicitation",
+                "Massachusetts"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-095",
+        "category": "document_summarization",
+        "input": "Summarize the DocVer team structure and active member roles. (Summary Case 10)",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 active members",
+                "Nihal",
+                "Priya",
+                "Alex",
+                "Samantha",
+                "Marcus"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-096",
+        "category": "document_summarization",
+        "input": "Summarize the Project Schedule and Timeline for the 2025 Enterprise Release. (Summary Case 10)",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "5 phases",
+                "$500,000 budget",
+                "October 15, 2025"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-097",
+        "category": "document_summarization",
+        "input": "Provide a financial executive summary of the 2024 Nexus Financial Position statement. (Summary Case 10)",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Nexus Financial",
+                "$84,500",
+                "$16,800",
+                "Ernst & Young"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-098",
+        "category": "document_summarization",
+        "input": "Summarize Section 6 and Section 7 of the 2024 MSA. (Summary Case 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "limitation of liability",
+                "$500,000",
+                "indemnification",
+                "$250,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-099",
+        "category": "document_summarization",
+        "input": "Summarize the confidentiality obligations in Section 4 of the 2025 MSA. (Summary Case 10)",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "ISO 27001",
+                "zero-retention",
+                "24 hours"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    },
+    {
+        "id": "SUMM-100",
+        "category": "document_summarization",
+        "input": "Summarize Section 2 fees and payment terms across the 2024 and 2025 MSAs. (Summary Case 10)",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "summarization",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$450,000",
+                "$750,000"
+            ],
+            "min_words": 20,
+            "max_words": 250
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "summarization_inaccuracy"
+    }
+]

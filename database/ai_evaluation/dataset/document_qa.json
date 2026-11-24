@@ -1,0 +1,2983 @@
+[
+    {
+        "id": "DOCQA-001",
+        "category": "document_qa",
+        "input": "Who is the Product Lead and Principal AI Architect in the team directory?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Nihal Cilamkoti",
+            "contains": [
+                "Nihal",
+                "Product Lead",
+                "Architect"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-002",
+        "category": "document_qa",
+        "input": "What are the primary responsibilities of Priya Sharma?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Full-Stack Engineering Lead responsible for Next.js frontend, state management, WebSockets, and Laravel API contracts",
+            "contains": [
+                "Priya",
+                "Next.js",
+                "Frontend"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-003",
+        "category": "document_qa",
+        "input": "How many core team members are listed in the directory?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Five (5) active members",
+            "contains": [
+                "5",
+                "five"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-004",
+        "category": "document_qa",
+        "input": "Who handles Kubernetes cluster management and CI\/CD pipelines?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Alex Mercer",
+            "contains": [
+                "Alex",
+                "Mercer",
+                "DevOps"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-005",
+        "category": "document_qa",
+        "input": "What is Samantha Reed responsible for in the engineering team?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "QA and Security Compliance Analyst responsible for regression test suites and SOC 2 audits",
+            "contains": [
+                "Samantha",
+                "QA",
+                "Security",
+                "SOC 2"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-006",
+        "category": "document_qa",
+        "input": "Who does Marcus Vance report to according to the organizational directory?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-007",
+        "category": "document_qa",
+        "input": "At what time is the daily standup held for the engineering team?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "09:30 AM EST Monday through Friday",
+            "contains": [
+                "09:30 AM",
+                "EST"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-008",
+        "category": "document_qa",
+        "input": "When is the Architecture Review Board held and who leads it?",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Every Wednesday at 02:00 PM EST, led by Nihal Cilamkoti",
+            "contains": [
+                "Wednesday",
+                "02:00 PM",
+                "Nihal"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-009",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2024)?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "January 15, 2024",
+            "contains": [
+                "January 15, 2024"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-010",
+        "category": "document_qa",
+        "input": "Who are the contracting parties in the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Acme Corporation (Client) and CloudTech Solutions Inc. (Service Provider)",
+            "contains": [
+                "Acme Corporation",
+                "CloudTech Solutions"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-011",
+        "category": "document_qa",
+        "input": "What are the payment terms specified in Section 2.2 of the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 30 days from invoice date",
+            "contains": [
+                "Net 30"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-012",
+        "category": "document_qa",
+        "input": "What is the aggregate liability cap under Section 6.2 of the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-013",
+        "category": "document_qa",
+        "input": "What is the termination for convenience notice period in the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Thirty (30) days prior written notice",
+            "contains": [
+                "30 days",
+                "thirty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-014",
+        "category": "document_qa",
+        "input": "What is the initial term length of the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twelve (12) months",
+            "contains": [
+                "12 months",
+                "twelve"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-015",
+        "category": "document_qa",
+        "input": "Which state law governs the 2024 MSA and where is arbitration seated?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of Delaware, arbitration in Wilmington, Delaware",
+            "contains": [
+                "Delaware",
+                "Wilmington"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-016",
+        "category": "document_qa",
+        "input": "What is the indemnification liability cap in the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$250,000 USD",
+            "contains": [
+                "$250,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-017",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is mandated in Section 4.3 of the 2024 MSA?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within forty-eight (48) hours",
+            "contains": [
+                "48 hours",
+                "forty-eight"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-018",
+        "category": "document_qa",
+        "input": "Who signed the 2024 MSA on behalf of Acme Corporation?",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Jonathan Miller, Chief Operating Officer",
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-019",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2025)?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "February 1, 2025",
+            "contains": [
+                "February 1, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-020",
+        "category": "document_qa",
+        "input": "What are the payment terms in the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 60 days from the invoice date",
+            "contains": [
+                "Net 60"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-021",
+        "category": "document_qa",
+        "input": "What is the liability cap under Section 6.2 of the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$1,000,000 USD",
+            "contains": [
+                "$1,000,000",
+                "1 million"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-022",
+        "category": "document_qa",
+        "input": "Is indemnification capped or uncapped under the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Uncapped and not subject to Section 6 liability caps",
+            "contains": [
+                "uncapped"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-023",
+        "category": "document_qa",
+        "input": "Which state law governs the 2025 MSA and under what rules is arbitration conducted?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of California, JAMS Comprehensive Arbitration Rules in San Francisco",
+            "contains": [
+                "California",
+                "San Francisco",
+                "JAMS"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-024",
+        "category": "document_qa",
+        "input": "What is the initial contract term length in the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twenty-four (24) months",
+            "contains": [
+                "24 months",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-025",
+        "category": "document_qa",
+        "input": "What is the notice period for termination for convenience in the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Sixty (60) days prior written notice",
+            "contains": [
+                "60 days",
+                "sixty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-026",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is required in the 2025 MSA?",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within twenty-four (24) hours",
+            "contains": [
+                "24 hours",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-027",
+        "category": "document_qa",
+        "input": "What is the official global go-live date in the project schedule?",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "October 15, 2025 at 04:00 UTC",
+            "contains": [
+                "October 15, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-028",
+        "category": "document_qa",
+        "input": "What is the total allocated project budget across all 5 phases?",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000",
+                "500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-029",
+        "category": "document_qa",
+        "input": "What was the budget allocated specifically for Phase 2?",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$185,000 USD",
+            "contains": [
+                "$185,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-030",
+        "category": "document_qa",
+        "input": "Who is designated as the Project Manager on the schedule document?",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-031",
+        "category": "document_qa",
+        "input": "What were the Cash and Cash Equivalents for Nexus Financial as of December 31, 2024?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$14,250 thousand ($14,250,000 USD)",
+            "contains": [
+                "14,250"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-032",
+        "category": "document_qa",
+        "input": "What was the total gross revenue of Nexus Financial Corp in 2024?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$84,500 thousand ($84,500,000 USD)",
+            "contains": [
+                "84,500"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-033",
+        "category": "document_qa",
+        "input": "What was the percentage revenue growth in 2024 compared to 2023?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "18.2% growth (from $71,500 to $84,500)",
+            "contains": [
+                "18.2%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-034",
+        "category": "document_qa",
+        "input": "Who is the lead independent auditor for Nexus Financial Corp?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Ernst & Young LLP",
+            "contains": [
+                "Ernst & Young",
+                "EY"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-035",
+        "category": "document_qa",
+        "input": "What was the Net Income reported by Nexus Financial Corp in 2024?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$16,800 thousand ($16,800,000 USD)",
+            "contains": [
+                "16,800"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-036",
+        "category": "document_qa",
+        "input": "What was the gross margin percentage in 2024 versus 2023?",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "42.5% in 2024 compared to 39.8% in 2023",
+            "contains": [
+                "42.5%",
+                "39.8%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-037",
+        "category": "document_qa",
+        "input": "Who is the Product Lead and Principal AI Architect in the team directory? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Nihal Cilamkoti",
+            "contains": [
+                "Nihal",
+                "Product Lead",
+                "Architect"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-038",
+        "category": "document_qa",
+        "input": "What are the primary responsibilities of Priya Sharma? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Full-Stack Engineering Lead responsible for Next.js frontend, state management, WebSockets, and Laravel API contracts",
+            "contains": [
+                "Priya",
+                "Next.js",
+                "Frontend"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-039",
+        "category": "document_qa",
+        "input": "How many core team members are listed in the directory? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Five (5) active members",
+            "contains": [
+                "5",
+                "five"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-040",
+        "category": "document_qa",
+        "input": "Who handles Kubernetes cluster management and CI\/CD pipelines? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Alex Mercer",
+            "contains": [
+                "Alex",
+                "Mercer",
+                "DevOps"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-041",
+        "category": "document_qa",
+        "input": "What is Samantha Reed responsible for in the engineering team? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "QA and Security Compliance Analyst responsible for regression test suites and SOC 2 audits",
+            "contains": [
+                "Samantha",
+                "QA",
+                "Security",
+                "SOC 2"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-042",
+        "category": "document_qa",
+        "input": "Who does Marcus Vance report to according to the organizational directory? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-043",
+        "category": "document_qa",
+        "input": "At what time is the daily standup held for the engineering team? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "09:30 AM EST Monday through Friday",
+            "contains": [
+                "09:30 AM",
+                "EST"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-044",
+        "category": "document_qa",
+        "input": "When is the Architecture Review Board held and who leads it? [Query Variant 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Every Wednesday at 02:00 PM EST, led by Nihal Cilamkoti",
+            "contains": [
+                "Wednesday",
+                "02:00 PM",
+                "Nihal"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-045",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2024)? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "January 15, 2024",
+            "contains": [
+                "January 15, 2024"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-046",
+        "category": "document_qa",
+        "input": "Who are the contracting parties in the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Acme Corporation (Client) and CloudTech Solutions Inc. (Service Provider)",
+            "contains": [
+                "Acme Corporation",
+                "CloudTech Solutions"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-047",
+        "category": "document_qa",
+        "input": "What are the payment terms specified in Section 2.2 of the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 30 days from invoice date",
+            "contains": [
+                "Net 30"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-048",
+        "category": "document_qa",
+        "input": "What is the aggregate liability cap under Section 6.2 of the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-049",
+        "category": "document_qa",
+        "input": "What is the termination for convenience notice period in the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Thirty (30) days prior written notice",
+            "contains": [
+                "30 days",
+                "thirty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-050",
+        "category": "document_qa",
+        "input": "What is the initial term length of the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twelve (12) months",
+            "contains": [
+                "12 months",
+                "twelve"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-051",
+        "category": "document_qa",
+        "input": "Which state law governs the 2024 MSA and where is arbitration seated? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of Delaware, arbitration in Wilmington, Delaware",
+            "contains": [
+                "Delaware",
+                "Wilmington"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-052",
+        "category": "document_qa",
+        "input": "What is the indemnification liability cap in the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$250,000 USD",
+            "contains": [
+                "$250,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-053",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is mandated in Section 4.3 of the 2024 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within forty-eight (48) hours",
+            "contains": [
+                "48 hours",
+                "forty-eight"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-054",
+        "category": "document_qa",
+        "input": "Who signed the 2024 MSA on behalf of Acme Corporation? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Jonathan Miller, Chief Operating Officer",
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-055",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2025)? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "February 1, 2025",
+            "contains": [
+                "February 1, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-056",
+        "category": "document_qa",
+        "input": "What are the payment terms in the 2025 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 60 days from the invoice date",
+            "contains": [
+                "Net 60"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-057",
+        "category": "document_qa",
+        "input": "What is the liability cap under Section 6.2 of the 2025 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$1,000,000 USD",
+            "contains": [
+                "$1,000,000",
+                "1 million"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-058",
+        "category": "document_qa",
+        "input": "Is indemnification capped or uncapped under the 2025 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Uncapped and not subject to Section 6 liability caps",
+            "contains": [
+                "uncapped"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-059",
+        "category": "document_qa",
+        "input": "Which state law governs the 2025 MSA and under what rules is arbitration conducted? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of California, JAMS Comprehensive Arbitration Rules in San Francisco",
+            "contains": [
+                "California",
+                "San Francisco",
+                "JAMS"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-060",
+        "category": "document_qa",
+        "input": "What is the initial contract term length in the 2025 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twenty-four (24) months",
+            "contains": [
+                "24 months",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-061",
+        "category": "document_qa",
+        "input": "What is the notice period for termination for convenience in the 2025 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Sixty (60) days prior written notice",
+            "contains": [
+                "60 days",
+                "sixty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-062",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is required in the 2025 MSA? [Query Variant 2]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within twenty-four (24) hours",
+            "contains": [
+                "24 hours",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-063",
+        "category": "document_qa",
+        "input": "What is the official global go-live date in the project schedule? [Query Variant 2]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "October 15, 2025 at 04:00 UTC",
+            "contains": [
+                "October 15, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-064",
+        "category": "document_qa",
+        "input": "What is the total allocated project budget across all 5 phases? [Query Variant 2]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000",
+                "500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-065",
+        "category": "document_qa",
+        "input": "What was the budget allocated specifically for Phase 2? [Query Variant 2]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$185,000 USD",
+            "contains": [
+                "$185,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-066",
+        "category": "document_qa",
+        "input": "Who is designated as the Project Manager on the schedule document? [Query Variant 2]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-067",
+        "category": "document_qa",
+        "input": "What were the Cash and Cash Equivalents for Nexus Financial as of December 31, 2024? [Query Variant 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$14,250 thousand ($14,250,000 USD)",
+            "contains": [
+                "14,250"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-068",
+        "category": "document_qa",
+        "input": "What was the total gross revenue of Nexus Financial Corp in 2024? [Query Variant 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$84,500 thousand ($84,500,000 USD)",
+            "contains": [
+                "84,500"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-069",
+        "category": "document_qa",
+        "input": "What was the percentage revenue growth in 2024 compared to 2023? [Query Variant 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "18.2% growth (from $71,500 to $84,500)",
+            "contains": [
+                "18.2%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-070",
+        "category": "document_qa",
+        "input": "Who is the lead independent auditor for Nexus Financial Corp? [Query Variant 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Ernst & Young LLP",
+            "contains": [
+                "Ernst & Young",
+                "EY"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-071",
+        "category": "document_qa",
+        "input": "What was the Net Income reported by Nexus Financial Corp in 2024? [Query Variant 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$16,800 thousand ($16,800,000 USD)",
+            "contains": [
+                "16,800"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-072",
+        "category": "document_qa",
+        "input": "What was the gross margin percentage in 2024 versus 2023? [Query Variant 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "42.5% in 2024 compared to 39.8% in 2023",
+            "contains": [
+                "42.5%",
+                "39.8%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-073",
+        "category": "document_qa",
+        "input": "Who is the Product Lead and Principal AI Architect in the team directory? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Nihal Cilamkoti",
+            "contains": [
+                "Nihal",
+                "Product Lead",
+                "Architect"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-074",
+        "category": "document_qa",
+        "input": "What are the primary responsibilities of Priya Sharma? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Full-Stack Engineering Lead responsible for Next.js frontend, state management, WebSockets, and Laravel API contracts",
+            "contains": [
+                "Priya",
+                "Next.js",
+                "Frontend"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-075",
+        "category": "document_qa",
+        "input": "How many core team members are listed in the directory? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Five (5) active members",
+            "contains": [
+                "5",
+                "five"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-076",
+        "category": "document_qa",
+        "input": "Who handles Kubernetes cluster management and CI\/CD pipelines? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Alex Mercer",
+            "contains": [
+                "Alex",
+                "Mercer",
+                "DevOps"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-077",
+        "category": "document_qa",
+        "input": "What is Samantha Reed responsible for in the engineering team? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "QA and Security Compliance Analyst responsible for regression test suites and SOC 2 audits",
+            "contains": [
+                "Samantha",
+                "QA",
+                "Security",
+                "SOC 2"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-078",
+        "category": "document_qa",
+        "input": "Who does Marcus Vance report to according to the organizational directory? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-079",
+        "category": "document_qa",
+        "input": "At what time is the daily standup held for the engineering team? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "09:30 AM EST Monday through Friday",
+            "contains": [
+                "09:30 AM",
+                "EST"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-080",
+        "category": "document_qa",
+        "input": "When is the Architecture Review Board held and who leads it? [Query Variant 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Every Wednesday at 02:00 PM EST, led by Nihal Cilamkoti",
+            "contains": [
+                "Wednesday",
+                "02:00 PM",
+                "Nihal"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-081",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2024)? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "January 15, 2024",
+            "contains": [
+                "January 15, 2024"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-082",
+        "category": "document_qa",
+        "input": "Who are the contracting parties in the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Acme Corporation (Client) and CloudTech Solutions Inc. (Service Provider)",
+            "contains": [
+                "Acme Corporation",
+                "CloudTech Solutions"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-083",
+        "category": "document_qa",
+        "input": "What are the payment terms specified in Section 2.2 of the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 30 days from invoice date",
+            "contains": [
+                "Net 30"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-084",
+        "category": "document_qa",
+        "input": "What is the aggregate liability cap under Section 6.2 of the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-085",
+        "category": "document_qa",
+        "input": "What is the termination for convenience notice period in the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Thirty (30) days prior written notice",
+            "contains": [
+                "30 days",
+                "thirty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-086",
+        "category": "document_qa",
+        "input": "What is the initial term length of the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twelve (12) months",
+            "contains": [
+                "12 months",
+                "twelve"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-087",
+        "category": "document_qa",
+        "input": "Which state law governs the 2024 MSA and where is arbitration seated? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of Delaware, arbitration in Wilmington, Delaware",
+            "contains": [
+                "Delaware",
+                "Wilmington"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-088",
+        "category": "document_qa",
+        "input": "What is the indemnification liability cap in the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$250,000 USD",
+            "contains": [
+                "$250,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-089",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is mandated in Section 4.3 of the 2024 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within forty-eight (48) hours",
+            "contains": [
+                "48 hours",
+                "forty-eight"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-090",
+        "category": "document_qa",
+        "input": "Who signed the 2024 MSA on behalf of Acme Corporation? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Jonathan Miller, Chief Operating Officer",
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-091",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2025)? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "February 1, 2025",
+            "contains": [
+                "February 1, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-092",
+        "category": "document_qa",
+        "input": "What are the payment terms in the 2025 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 60 days from the invoice date",
+            "contains": [
+                "Net 60"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-093",
+        "category": "document_qa",
+        "input": "What is the liability cap under Section 6.2 of the 2025 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$1,000,000 USD",
+            "contains": [
+                "$1,000,000",
+                "1 million"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-094",
+        "category": "document_qa",
+        "input": "Is indemnification capped or uncapped under the 2025 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Uncapped and not subject to Section 6 liability caps",
+            "contains": [
+                "uncapped"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-095",
+        "category": "document_qa",
+        "input": "Which state law governs the 2025 MSA and under what rules is arbitration conducted? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of California, JAMS Comprehensive Arbitration Rules in San Francisco",
+            "contains": [
+                "California",
+                "San Francisco",
+                "JAMS"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-096",
+        "category": "document_qa",
+        "input": "What is the initial contract term length in the 2025 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twenty-four (24) months",
+            "contains": [
+                "24 months",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-097",
+        "category": "document_qa",
+        "input": "What is the notice period for termination for convenience in the 2025 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Sixty (60) days prior written notice",
+            "contains": [
+                "60 days",
+                "sixty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-098",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is required in the 2025 MSA? [Query Variant 3]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within twenty-four (24) hours",
+            "contains": [
+                "24 hours",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-099",
+        "category": "document_qa",
+        "input": "What is the official global go-live date in the project schedule? [Query Variant 3]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "October 15, 2025 at 04:00 UTC",
+            "contains": [
+                "October 15, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-100",
+        "category": "document_qa",
+        "input": "What is the total allocated project budget across all 5 phases? [Query Variant 3]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000",
+                "500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-101",
+        "category": "document_qa",
+        "input": "What was the budget allocated specifically for Phase 2? [Query Variant 3]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$185,000 USD",
+            "contains": [
+                "$185,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-102",
+        "category": "document_qa",
+        "input": "Who is designated as the Project Manager on the schedule document? [Query Variant 3]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-103",
+        "category": "document_qa",
+        "input": "What were the Cash and Cash Equivalents for Nexus Financial as of December 31, 2024? [Query Variant 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$14,250 thousand ($14,250,000 USD)",
+            "contains": [
+                "14,250"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-104",
+        "category": "document_qa",
+        "input": "What was the total gross revenue of Nexus Financial Corp in 2024? [Query Variant 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$84,500 thousand ($84,500,000 USD)",
+            "contains": [
+                "84,500"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-105",
+        "category": "document_qa",
+        "input": "What was the percentage revenue growth in 2024 compared to 2023? [Query Variant 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "18.2% growth (from $71,500 to $84,500)",
+            "contains": [
+                "18.2%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-106",
+        "category": "document_qa",
+        "input": "Who is the lead independent auditor for Nexus Financial Corp? [Query Variant 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Ernst & Young LLP",
+            "contains": [
+                "Ernst & Young",
+                "EY"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-107",
+        "category": "document_qa",
+        "input": "What was the Net Income reported by Nexus Financial Corp in 2024? [Query Variant 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$16,800 thousand ($16,800,000 USD)",
+            "contains": [
+                "16,800"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-108",
+        "category": "document_qa",
+        "input": "What was the gross margin percentage in 2024 versus 2023? [Query Variant 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "42.5% in 2024 compared to 39.8% in 2023",
+            "contains": [
+                "42.5%",
+                "39.8%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-109",
+        "category": "document_qa",
+        "input": "Who is the Product Lead and Principal AI Architect in the team directory? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Nihal Cilamkoti",
+            "contains": [
+                "Nihal",
+                "Product Lead",
+                "Architect"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-110",
+        "category": "document_qa",
+        "input": "What are the primary responsibilities of Priya Sharma? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Full-Stack Engineering Lead responsible for Next.js frontend, state management, WebSockets, and Laravel API contracts",
+            "contains": [
+                "Priya",
+                "Next.js",
+                "Frontend"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-111",
+        "category": "document_qa",
+        "input": "How many core team members are listed in the directory? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Five (5) active members",
+            "contains": [
+                "5",
+                "five"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-112",
+        "category": "document_qa",
+        "input": "Who handles Kubernetes cluster management and CI\/CD pipelines? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Alex Mercer",
+            "contains": [
+                "Alex",
+                "Mercer",
+                "DevOps"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-113",
+        "category": "document_qa",
+        "input": "What is Samantha Reed responsible for in the engineering team? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "QA and Security Compliance Analyst responsible for regression test suites and SOC 2 audits",
+            "contains": [
+                "Samantha",
+                "QA",
+                "Security",
+                "SOC 2"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-114",
+        "category": "document_qa",
+        "input": "Who does Marcus Vance report to according to the organizational directory? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-115",
+        "category": "document_qa",
+        "input": "At what time is the daily standup held for the engineering team? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "09:30 AM EST Monday through Friday",
+            "contains": [
+                "09:30 AM",
+                "EST"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-116",
+        "category": "document_qa",
+        "input": "When is the Architecture Review Board held and who leads it? [Query Variant 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Every Wednesday at 02:00 PM EST, led by Nihal Cilamkoti",
+            "contains": [
+                "Wednesday",
+                "02:00 PM",
+                "Nihal"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-117",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2024)? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "January 15, 2024",
+            "contains": [
+                "January 15, 2024"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-118",
+        "category": "document_qa",
+        "input": "Who are the contracting parties in the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Acme Corporation (Client) and CloudTech Solutions Inc. (Service Provider)",
+            "contains": [
+                "Acme Corporation",
+                "CloudTech Solutions"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-119",
+        "category": "document_qa",
+        "input": "What are the payment terms specified in Section 2.2 of the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 30 days from invoice date",
+            "contains": [
+                "Net 30"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-120",
+        "category": "document_qa",
+        "input": "What is the aggregate liability cap under Section 6.2 of the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-121",
+        "category": "document_qa",
+        "input": "What is the termination for convenience notice period in the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Thirty (30) days prior written notice",
+            "contains": [
+                "30 days",
+                "thirty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-122",
+        "category": "document_qa",
+        "input": "What is the initial term length of the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twelve (12) months",
+            "contains": [
+                "12 months",
+                "twelve"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-123",
+        "category": "document_qa",
+        "input": "Which state law governs the 2024 MSA and where is arbitration seated? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of Delaware, arbitration in Wilmington, Delaware",
+            "contains": [
+                "Delaware",
+                "Wilmington"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-124",
+        "category": "document_qa",
+        "input": "What is the indemnification liability cap in the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$250,000 USD",
+            "contains": [
+                "$250,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-125",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is mandated in Section 4.3 of the 2024 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within forty-eight (48) hours",
+            "contains": [
+                "48 hours",
+                "forty-eight"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-126",
+        "category": "document_qa",
+        "input": "Who signed the 2024 MSA on behalf of Acme Corporation? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Jonathan Miller, Chief Operating Officer",
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-127",
+        "category": "document_qa",
+        "input": "What is the Effective Date of the Master Services Agreement (2025)? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "February 1, 2025",
+            "contains": [
+                "February 1, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-128",
+        "category": "document_qa",
+        "input": "What are the payment terms in the 2025 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Net 60 days from the invoice date",
+            "contains": [
+                "Net 60"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-129",
+        "category": "document_qa",
+        "input": "What is the liability cap under Section 6.2 of the 2025 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$1,000,000 USD",
+            "contains": [
+                "$1,000,000",
+                "1 million"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-130",
+        "category": "document_qa",
+        "input": "Is indemnification capped or uncapped under the 2025 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Uncapped and not subject to Section 6 liability caps",
+            "contains": [
+                "uncapped"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-131",
+        "category": "document_qa",
+        "input": "Which state law governs the 2025 MSA and under what rules is arbitration conducted? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "State of California, JAMS Comprehensive Arbitration Rules in San Francisco",
+            "contains": [
+                "California",
+                "San Francisco",
+                "JAMS"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-132",
+        "category": "document_qa",
+        "input": "What is the initial contract term length in the 2025 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Twenty-four (24) months",
+            "contains": [
+                "24 months",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-133",
+        "category": "document_qa",
+        "input": "What is the notice period for termination for convenience in the 2025 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Sixty (60) days prior written notice",
+            "contains": [
+                "60 days",
+                "sixty"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-134",
+        "category": "document_qa",
+        "input": "What security incident notification timeframe is required in the 2025 MSA? [Query Variant 4]",
+        "relevant_context": "Document: master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Within twenty-four (24) hours",
+            "contains": [
+                "24 hours",
+                "twenty-four"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-135",
+        "category": "document_qa",
+        "input": "What is the official global go-live date in the project schedule? [Query Variant 4]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "October 15, 2025 at 04:00 UTC",
+            "contains": [
+                "October 15, 2025"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-136",
+        "category": "document_qa",
+        "input": "What is the total allocated project budget across all 5 phases? [Query Variant 4]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$500,000 USD",
+            "contains": [
+                "$500,000",
+                "500,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-137",
+        "category": "document_qa",
+        "input": "What was the budget allocated specifically for Phase 2? [Query Variant 4]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$185,000 USD",
+            "contains": [
+                "$185,000"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-138",
+        "category": "document_qa",
+        "input": "Who is designated as the Project Manager on the schedule document? [Query Variant 4]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-139",
+        "category": "document_qa",
+        "input": "What were the Cash and Cash Equivalents for Nexus Financial as of December 31, 2024? [Query Variant 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$14,250 thousand ($14,250,000 USD)",
+            "contains": [
+                "14,250"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-140",
+        "category": "document_qa",
+        "input": "What was the total gross revenue of Nexus Financial Corp in 2024? [Query Variant 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$84,500 thousand ($84,500,000 USD)",
+            "contains": [
+                "84,500"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-141",
+        "category": "document_qa",
+        "input": "What was the percentage revenue growth in 2024 compared to 2023? [Query Variant 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "18.2% growth (from $71,500 to $84,500)",
+            "contains": [
+                "18.2%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-142",
+        "category": "document_qa",
+        "input": "Who is the lead independent auditor for Nexus Financial Corp? [Query Variant 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Ernst & Young LLP",
+            "contains": [
+                "Ernst & Young",
+                "EY"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-143",
+        "category": "document_qa",
+        "input": "What was the Net Income reported by Nexus Financial Corp in 2024? [Query Variant 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "$16,800 thousand ($16,800,000 USD)",
+            "contains": [
+                "16,800"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-144",
+        "category": "document_qa",
+        "input": "What was the gross margin percentage in 2024 versus 2023? [Query Variant 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "42.5% in 2024 compared to 39.8% in 2023",
+            "contains": [
+                "42.5%",
+                "39.8%"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-145",
+        "category": "document_qa",
+        "input": "Who is the Product Lead and Principal AI Architect in the team directory? [Query Variant 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Nihal Cilamkoti",
+            "contains": [
+                "Nihal",
+                "Product Lead",
+                "Architect"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-146",
+        "category": "document_qa",
+        "input": "What are the primary responsibilities of Priya Sharma? [Query Variant 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Full-Stack Engineering Lead responsible for Next.js frontend, state management, WebSockets, and Laravel API contracts",
+            "contains": [
+                "Priya",
+                "Next.js",
+                "Frontend"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-147",
+        "category": "document_qa",
+        "input": "How many core team members are listed in the directory? [Query Variant 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Five (5) active members",
+            "contains": [
+                "5",
+                "five"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-148",
+        "category": "document_qa",
+        "input": "Who handles Kubernetes cluster management and CI\/CD pipelines? [Query Variant 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Alex Mercer",
+            "contains": [
+                "Alex",
+                "Mercer",
+                "DevOps"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-149",
+        "category": "document_qa",
+        "input": "What is Samantha Reed responsible for in the engineering team? [Query Variant 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "QA and Security Compliance Analyst responsible for regression test suites and SOC 2 audits",
+            "contains": [
+                "Samantha",
+                "QA",
+                "Security",
+                "SOC 2"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    },
+    {
+        "id": "DOCQA-150",
+        "category": "document_qa",
+        "input": "Who does Marcus Vance report to according to the organizational directory? [Query Variant 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "document_qa",
+        "expected_answer": {
+            "exact_answer": "Priya Sharma",
+            "contains": [
+                "Priya",
+                "Sharma"
+            ],
+            "requires_citation": true
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "fact_retrieval_error"
+    }
+]

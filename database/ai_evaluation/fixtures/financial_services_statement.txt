@@ -1,0 +1,45 @@
+NEXUS FINANCIAL CORP - AUDITED STATEMENT OF FINANCIAL POSITION
+As of December 31, 2024 (With Comparative Figures for 2023)
+Currency: United States Dollars (USD in thousands)
+
+ASSETS
+1. Current Assets:
+   Cash and Cash Equivalents: $14,250 (2024) | $11,800 (2023)
+   Short-term Marketable Securities: $8,400 (2024) | $6,200 (2023)
+   Accounts Receivable (Net of Allowance $450): $19,300 (2024) | $16,100 (2023)
+   Prepaid Expenses and Other Assets: $2,850 (2024) | $2,100 (2023)
+   Total Current Assets: $44,800 (2024) | $36,200 (2023)
+
+2. Non-Current Assets:
+   Property, Plant, and Equipment (Net): $52,600 (2024) | $48,300 (2023)
+   Intangible Assets and Goodwill: $24,100 (2024) | $24,100 (2023)
+   Deferred Tax Assets: $3,200 (2024) | $2,900 (2023)
+   Total Non-Current Assets: $79,900 (2024) | $75,300 (2023)
+   TOTAL ASSETS: $124,700 (2024) | $111,500 (2023)
+
+LIABILITIES AND SHAREHOLDERS' EQUITY
+3. Current Liabilities:
+   Accounts Payable: $12,400 (2024) | $10,500 (2023)
+   Accrued Expenses and Bonuses: $8,750 (2024) | $7,200 (2023)
+   Current Portion of Long-term Debt: $4,500 (2024) | $4,000 (2023)
+   Total Current Liabilities: $25,650 (2024) | $21,700 (2023)
+
+4. Non-Current Liabilities:
+   Long-term Senior Notes (4.5% due 2029): $38,000 (2024) | $42,500 (2023)
+   Operating Lease Liabilities: $6,400 (2024) | $7,100 (2023)
+   Total Non-Current Liabilities: $44,400 (2024) | $49,600 (2023)
+   TOTAL LIABILITIES: $70,050 (2024) | $71,300 (2023)
+
+5. Shareholders' Equity:
+   Common Stock ($0.01 par value, 50,000,000 shares authorized): $350 (2024) | $350 (2023)
+   Additional Paid-in Capital: $32,400 (2024) | $30,100 (2023)
+   Retained Earnings: $21,900 (2024) | $9,750 (2023)
+   Total Shareholders' Equity: $54,650 (2024) | $40,200 (2023)
+   TOTAL LIABILITIES AND SHAREHOLDERS' EQUITY: $124,700 (2024) | $111,500 (2023)
+
+6. OPERATIONAL HIGHLIGHTS (FULL YEAR 2024)
+- Total Gross Revenue: $84,500 (up 18.2% from $71,500 in 2023).
+- Net Income: $16,800 (up 34.4% from $12,500 in 2023).
+- Gross Margin: 42.5% in 2024 vs 39.8% in 2023.
+- Operating Cash Flow: $22,400 in 2024.
+- Lead Independent Auditor: Ernst & Young LLP (Unqualified Opinion issued February 20, 2025).

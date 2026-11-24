@@ -1,0 +1,2212 @@
+[
+    {
+        "id": "COMP-001",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law.",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-002",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements?",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-003",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025).",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-004",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs.",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-005",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2?",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-006",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs.",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-007",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table.",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-008",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped?",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-009",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025?",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-010",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs.",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-011",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-012",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-013",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-014",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-015",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 2]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-016",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 2]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-017",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-018",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-019",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-020",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 2]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-021",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-022",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-023",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-024",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-025",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 3]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-026",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 3]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-027",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-028",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-029",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-030",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 3]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-031",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-032",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-033",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-034",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-035",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 4]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-036",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 4]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-037",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-038",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-039",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-040",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 4]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-041",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-042",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-043",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-044",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-045",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 5]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-046",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 5]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-047",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-048",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-049",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-050",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 5]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-051",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-052",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-053",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-054",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-055",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 6]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-056",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 6]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-057",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-058",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-059",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-060",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 6]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-061",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-062",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-063",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-064",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-065",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 7]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-066",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 7]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-067",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-068",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-069",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-070",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 7]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-071",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-072",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-073",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-074",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-075",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 8]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-076",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 8]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-077",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-078",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-079",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-080",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 8]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-081",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-082",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-083",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-084",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-085",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 9]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-086",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 9]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-087",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-088",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-089",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-090",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 9]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-091",
+        "category": "document_comparison",
+        "input": "Compare the 2024 MSA (Document A) and 2025 MSA (Document B) across payment terms, liability caps, and governing law. [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "$500,000",
+                "$1,000,000",
+                "Delaware",
+                "California"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "confusion_slot_mixup"
+    },
+    {
+        "id": "COMP-092",
+        "category": "document_comparison",
+        "input": "What are all the differences in payment terms and interest rates between the 2024 and 2025 agreements? [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "Net 60",
+                "1.0%",
+                "1.5%"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "unnecessary_content"
+    },
+    {
+        "id": "COMP-093",
+        "category": "document_comparison",
+        "input": "Compare the initial terms and termination notice periods between Document A (2024) and Document B (2025). [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "12 months",
+                "24 months",
+                "30 days",
+                "60 days"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-094",
+        "category": "document_comparison",
+        "input": "Compare the confidentiality and security incident notification obligations between the 2024 and 2025 MSAs. [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "48 hours",
+                "24 hours",
+                "SOC 2",
+                "ISO 27001"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-095",
+        "category": "document_comparison",
+        "input": "Compare the NDA v1 (Document A) and NDA v2 (Document B). What clauses were added in v2? [Comparison Case 10]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "3 years",
+                "5 years",
+                "Massachusetts"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "missed_difference"
+    },
+    {
+        "id": "COMP-096",
+        "category": "document_comparison",
+        "input": "Compare the governing law and dispute jurisdiction between the two NDAs. [Comparison Case 10]",
+        "relevant_context": "Documents: non_disclosure_agreement_v1.txt and non_disclosure_agreement_v2.txt",
+        "document_references": [
+            "non_disclosure_agreement_v1.txt",
+            "non_disclosure_agreement_v2.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "New York",
+                "Massachusetts",
+                "Boston"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-097",
+        "category": "document_comparison",
+        "input": "Show all numerical differences between the 2024 MSA and 2025 MSA in a table. [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "|",
+                "2024",
+                "2025",
+                "30",
+                "60",
+                "500,000",
+                "1,000,000"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "COMP-098",
+        "category": "document_comparison",
+        "input": "Compare indemnification liability between the 2024 and 2025 MSAs. Is either agreement uncapped? [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "$250,000",
+                "uncapped"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    },
+    {
+        "id": "COMP-099",
+        "category": "document_comparison",
+        "input": "Are there any changes to the Work Product IP ownership provisions between 2024 and 2025? [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "work-made-for-hire",
+                "Client",
+                "model weights"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "hallucination_detected"
+    },
+    {
+        "id": "COMP-100",
+        "category": "document_comparison",
+        "input": "Compare the signers and their executive titles between the 2024 and 2025 MSAs. [Comparison Case 10]",
+        "relevant_context": "Documents: master_services_agreement_2024.txt and master_services_agreement_2025.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt",
+            "master_services_agreement_2025.txt"
+        ],
+        "expected_task": "comparison",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller",
+                "Chief Operating Officer",
+                "Chief Executive Officer",
+                "Elena Rostova"
+            ],
+            "not_mixes_slots": true
+        },
+        "evaluation_method": "comparison_accuracy",
+        "failure_category": "slot_confusion"
+    }
+]

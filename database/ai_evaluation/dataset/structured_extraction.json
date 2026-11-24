@@ -1,0 +1,2282 @@
+[
+    {
+        "id": "EXTR-001",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\".",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-002",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\".",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-003",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values.",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-004",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object.",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-005",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA.",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-006",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-007",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 2]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-008",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 2]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-009",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 2]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-010",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 2]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-011",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-012",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 3]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-013",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 3]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-014",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 3]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-015",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 3]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-016",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-017",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 4]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-018",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 4]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-019",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 4]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-020",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 4]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-021",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 5]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-022",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 5]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-023",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 5]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-024",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 5]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-025",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 5]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-026",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 6]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-027",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 6]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-028",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 6]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-029",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 6]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-030",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 6]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-031",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 7]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-032",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 7]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-033",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 7]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-034",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 7]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-035",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 7]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-036",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 8]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-037",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 8]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-038",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 8]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-039",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 8]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-040",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 8]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-041",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 9]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-042",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 9]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-043",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 9]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-044",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 9]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-045",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 9]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-046",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 10]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-047",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 10]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-048",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 10]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-049",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 10]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-050",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 10]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-051",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 11]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-052",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 11]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-053",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 11]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-054",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 11]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-055",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 11]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-056",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 12]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-057",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 12]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-058",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 12]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-059",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 12]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-060",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 12]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-061",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 13]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-062",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 13]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-063",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 13]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-064",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 13]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-065",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 13]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-066",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 14]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-067",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 14]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-068",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 14]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-069",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 14]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-070",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 14]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-071",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 15]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-072",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 15]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-073",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 15]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-074",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 15]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-075",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 15]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-076",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 16]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-077",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 16]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-078",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 16]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-079",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 16]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-080",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 16]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-081",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 17]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-082",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 17]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-083",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 17]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-084",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 17]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-085",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 17]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-086",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 18]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-087",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 18]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-088",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 18]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-089",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 18]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-090",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 18]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-091",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 19]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-092",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 19]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-093",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 19]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-094",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 19]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-095",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 19]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-096",
+        "category": "structured_extraction",
+        "input": "Extract all dates and monetary amounts from the 2024 MSA as a JSON object with keys \"dates\" and \"amounts\". [Batch 20]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "dates",
+                "amounts",
+                "January 15, 2024",
+                "450,000",
+                "500,000",
+                "250,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-097",
+        "category": "structured_extraction",
+        "input": "Extract the core team members from the directory as a JSON list of objects with \"name\", \"role\", and \"reports_to\". [Batch 20]",
+        "relevant_context": "Document: team_roles_and_responsibilities.txt",
+        "document_references": [
+            "team_roles_and_responsibilities.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Nihal Cilamkoti",
+                "Priya Sharma",
+                "Alex Mercer",
+                "Samantha Reed",
+                "Marcus Vance"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-098",
+        "category": "structured_extraction",
+        "input": "Extract the phase budgets from the project schedule as a JSON object mapping phase names to dollar values. [Batch 20]",
+        "relevant_context": "Document: project_schedule_and_timeline.txt",
+        "document_references": [
+            "project_schedule_and_timeline.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "Phase 1",
+                "120,000",
+                "Phase 2",
+                "185,000",
+                "Phase 3",
+                "95,000",
+                "Phase 4",
+                "65,000",
+                "Phase 5",
+                "35,000"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-099",
+        "category": "structured_extraction",
+        "input": "Extract the 2024 balance sheet totals (Total Current Assets, Total Assets, Total Liabilities, Total Equity) as a JSON object. [Batch 20]",
+        "relevant_context": "Document: financial_services_statement.txt",
+        "document_references": [
+            "financial_services_statement.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "json",
+            "contains": [
+                "44,800",
+                "124,700",
+                "70,050",
+                "54,650"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    },
+    {
+        "id": "EXTR-100",
+        "category": "structured_extraction",
+        "input": "Extract the key legal entities and their addresses from the 2024 MSA. [Batch 20]",
+        "relevant_context": "Document: master_services_agreement_2024.txt",
+        "document_references": [
+            "master_services_agreement_2024.txt"
+        ],
+        "expected_task": "structured_data_extraction",
+        "expected_answer": {
+            "format": "entities",
+            "contains": [
+                "Acme Corporation",
+                "100 Main Street",
+                "CloudTech Solutions Inc.",
+                "500 Tech Boulevard"
+            ]
+        },
+        "evaluation_method": "structured_json_validation",
+        "failure_category": "format_violation"
+    }
+]

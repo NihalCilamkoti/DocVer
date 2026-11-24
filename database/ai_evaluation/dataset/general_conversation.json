@@ -1,0 +1,4470 @@
+[
+    {
+        "id": "GEN-001",
+        "category": "general_conversation",
+        "input": "Explain recursion with a simple real-world analogy.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "recursion",
+                "base case",
+                "call stack"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-002",
+        "category": "general_conversation",
+        "input": "How does a REST API differ from GraphQL?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "REST",
+                "GraphQL",
+                "endpoints",
+                "queries"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-003",
+        "category": "general_conversation",
+        "input": "What is database normalization and why is 3NF important?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "normalization",
+                "redundancy",
+                "3NF",
+                "anomalies"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-004",
+        "category": "general_conversation",
+        "input": "Explain the difference between optimistic and pessimistic locking.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "locking",
+                "concurrency",
+                "transactions"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-005",
+        "category": "general_conversation",
+        "input": "What is a race condition and how can developers prevent it?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "race condition",
+                "concurrency",
+                "mutex",
+                "thread"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-006",
+        "category": "general_conversation",
+        "input": "How does Docker containerization differ from a Virtual Machine?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Docker",
+                "kernel",
+                "hypervisor",
+                "containers"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-007",
+        "category": "general_conversation",
+        "input": "Explain the ACID properties of relational databases.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Atomicity",
+                "Consistency",
+                "Isolation",
+                "Durability"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-008",
+        "category": "general_conversation",
+        "input": "What is JWT and how is it used for stateless authentication?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "JWT",
+                "signature",
+                "token",
+                "stateless",
+                "header"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-009",
+        "category": "general_conversation",
+        "input": "Explain the difference between synchronous and asynchronous execution in JavaScript.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "event loop",
+                "asynchronous",
+                "callback",
+                "promise"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-010",
+        "category": "general_conversation",
+        "input": "What is the purpose of an index in PostgreSQL and how does a B-Tree index work?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "index",
+                "B-Tree",
+                "lookup",
+                "performance"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-011",
+        "category": "general_conversation",
+        "input": "Explain microservices architecture compared to a monolithic architecture.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "monolith",
+                "microservices",
+                "services",
+                "scalability"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-012",
+        "category": "general_conversation",
+        "input": "How does HTTPS establish a secure TLS connection?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "handshake",
+                "TLS",
+                "certificate",
+                "encryption",
+                "keys"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-013",
+        "category": "general_conversation",
+        "input": "Explain the Single Responsibility Principle with a code example concept.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Single Responsibility",
+                "SOLID",
+                "class",
+                "change"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-014",
+        "category": "general_conversation",
+        "input": "What is the difference between SQL injection and Cross-Site Scripting (XSS)?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "SQL injection",
+                "XSS",
+                "vulnerability",
+                "sanitization"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-015",
+        "category": "general_conversation",
+        "input": "Explain how Redis is used as an in-memory cache and pub\/sub broker.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Redis",
+                "cache",
+                "in-memory",
+                "pub\/sub",
+                "latency"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-016",
+        "category": "general_conversation",
+        "input": "What are WebSockets and when should they be chosen over HTTP polling?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "WebSocket",
+                "bidirectional",
+                "full-duplex",
+                "real-time"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-017",
+        "category": "general_conversation",
+        "input": "Explain the difference between horizontal and vertical scaling in cloud architecture.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "horizontal",
+                "vertical",
+                "nodes",
+                "CPU",
+                "cluster"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-018",
+        "category": "general_conversation",
+        "input": "What is CI\/CD and what are the benefits of automated deployment pipelines?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "CI\/CD",
+                "pipeline",
+                "deployment",
+                "automated",
+                "testing"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-019",
+        "category": "general_conversation",
+        "input": "How does garbage collection work in modern managed runtimes like V8 or JVM?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "garbage collection",
+                "memory",
+                "heap",
+                "reference"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-020",
+        "category": "general_conversation",
+        "input": "Explain the concept of idempotent API endpoints with HTTP methods PUT and DELETE.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "idempotent",
+                "PUT",
+                "DELETE",
+                "state"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-021",
+        "category": "general_conversation",
+        "input": "What is an ORM and what are the trade-offs between Eloquent and raw SQL?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "ORM",
+                "Eloquent",
+                "abstraction",
+                "performance"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-022",
+        "category": "general_conversation",
+        "input": "Explain what a memory leak is and how it can be diagnosed.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "memory leak",
+                "profiler",
+                "allocation",
+                "heap"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-023",
+        "category": "general_conversation",
+        "input": "How does DNS resolution resolve a domain name into an IP address?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "DNS",
+                "nameserver",
+                "IP",
+                "resolver",
+                "root"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-024",
+        "category": "general_conversation",
+        "input": "What is the difference between TCP and UDP networking protocols?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "TCP",
+                "UDP",
+                "handshake",
+                "packet",
+                "reliable"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-025",
+        "category": "general_conversation",
+        "input": "Explain semantic versioning (SemVer) with major, minor, and patch numbers.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "SemVer",
+                "breaking",
+                "major",
+                "minor",
+                "patch"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-026",
+        "category": "general_conversation",
+        "input": "What is Git rebase and how does it differ from Git merge?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "rebase",
+                "merge",
+                "commit",
+                "history",
+                "linear"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-027",
+        "category": "general_conversation",
+        "input": "Explain the concept of eventual consistency in distributed systems.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "eventual consistency",
+                "CAP theorem",
+                "distributed",
+                "nodes"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-028",
+        "category": "general_conversation",
+        "input": "What is rate limiting and what algorithms are commonly used (e.g. token bucket)?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "rate limiting",
+                "token bucket",
+                "leaky bucket",
+                "throttle"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-029",
+        "category": "general_conversation",
+        "input": "How does CORS (Cross-Origin Resource Sharing) protect web applications?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "CORS",
+                "origin",
+                "headers",
+                "preflight",
+                "browser"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-030",
+        "category": "general_conversation",
+        "input": "Explain the difference between process-level concurrency and multithreading.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "process",
+                "thread",
+                "memory",
+                "context switch"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-031",
+        "category": "general_conversation",
+        "input": "What is a Content Delivery Network (CDN) and how does edge caching work?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "CDN",
+                "edge",
+                "cache",
+                "latency",
+                "origin"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-032",
+        "category": "general_conversation",
+        "input": "Explain OAuth 2.0 grant types and when to use Authorization Code with PKCE.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "OAuth",
+                "PKCE",
+                "authorization code",
+                "client"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-033",
+        "category": "general_conversation",
+        "input": "What is a circuit breaker pattern in distributed software engineering?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "circuit breaker",
+                "failure",
+                "threshold",
+                "open",
+                "half-open"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-034",
+        "category": "general_conversation",
+        "input": "Explain dependency injection and why it improves software testability.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "dependency injection",
+                "inversion of control",
+                "mock",
+                "coupling"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-035",
+        "category": "general_conversation",
+        "input": "How does database sharding differ from read-replica replication?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "sharding",
+                "partition",
+                "replica",
+                "read",
+                "write"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-036",
+        "category": "general_conversation",
+        "input": "What is zero-trust architecture in modern enterprise cybersecurity?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "zero trust",
+                "verify",
+                "perimeter",
+                "least privilege"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-037",
+        "category": "general_conversation",
+        "input": "Explain the difference between symmetric and asymmetric cryptography.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "symmetric",
+                "asymmetric",
+                "public key",
+                "private key"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-038",
+        "category": "general_conversation",
+        "input": "What is a webhook and how can consumers verify its authenticity?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "webhook",
+                "HTTP",
+                "HMAC",
+                "signature",
+                "payload"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-039",
+        "category": "general_conversation",
+        "input": "Explain how serverless computing (AWS Lambda, Cloudflare Workers) scales on demand.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "serverless",
+                "cold start",
+                "event-driven",
+                "invocation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-040",
+        "category": "general_conversation",
+        "input": "What is blue-green deployment and how does it prevent downtime during upgrades?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "blue-green",
+                "router",
+                "downtime",
+                "rollback",
+                "traffic"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-041",
+        "category": "general_conversation",
+        "input": "Explain what indemnification means in a commercial contract in plain English.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "indemnify",
+                "protect",
+                "loss",
+                "third-party",
+                "harm"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-042",
+        "category": "general_conversation",
+        "input": "What is the difference between gross margin and net margin?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "gross margin",
+                "net margin",
+                "revenue",
+                "expenses",
+                "profit"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-043",
+        "category": "general_conversation",
+        "input": "Explain the concept of Net 30 payment terms and why vendors offer it.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Net 30",
+                "invoice",
+                "days",
+                "payment",
+                "credit"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-044",
+        "category": "general_conversation",
+        "input": "What is an uncapped liability clause and why do legal teams negotiate against it?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "liability",
+                "uncapped",
+                "risk",
+                "damages",
+                "cap"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-045",
+        "category": "general_conversation",
+        "input": "Explain what EBITDA stands for and why private equity firms use it.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "EBITDA",
+                "earnings",
+                "interest",
+                "taxes",
+                "depreciation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-046",
+        "category": "general_conversation",
+        "input": "What is a force majeure clause in commercial agreements?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "force majeure",
+                "unforeseeable",
+                "acts of God",
+                "obligation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-047",
+        "category": "general_conversation",
+        "input": "Explain what a Non-Disclosure Agreement (NDA) is and its key clauses.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "NDA",
+                "confidential",
+                "disclosure",
+                "term",
+                "purpose"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-048",
+        "category": "general_conversation",
+        "input": "What is working capital and how is it calculated from a balance sheet?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "working capital",
+                "current assets",
+                "current liabilities"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-049",
+        "category": "general_conversation",
+        "input": "Explain the difference between Capex (Capital Expenditure) and Opex (Operating Expenditure).",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "CapEx",
+                "OpEx",
+                "asset",
+                "expense",
+                "depreciation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-050",
+        "category": "general_conversation",
+        "input": "What does SOC 2 Type II compliance signify for a SaaS vendor?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "SOC 2",
+                "Type II",
+                "audit",
+                "security",
+                "controls",
+                "period"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-051",
+        "category": "general_conversation",
+        "input": "Explain the concept of liquid damages in contract law.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "liquidated damages",
+                "pre-estimated",
+                "breach",
+                "compensation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-052",
+        "category": "general_conversation",
+        "input": "What is a Master Services Agreement (MSA) and how do Statements of Work (SOW) relate to it?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "MSA",
+                "SOW",
+                "framework",
+                "deliverables",
+                "terms"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-053",
+        "category": "general_conversation",
+        "input": "Explain what enterprise valuation (EV) means compared to market capitalization.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "enterprise value",
+                "market cap",
+                "debt",
+                "cash"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-054",
+        "category": "general_conversation",
+        "input": "What is a non-solicitation agreement and how does it differ from a non-compete?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "non-solicitation",
+                "employees",
+                "clients",
+                "compete"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-055",
+        "category": "general_conversation",
+        "input": "Explain the difference between cash flow from operations and net income.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "cash flow",
+                "net income",
+                "non-cash",
+                "accrual",
+                "depreciation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-056",
+        "category": "general_conversation",
+        "input": "What is GDPR and what are the fundamental rights of data subjects?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "GDPR",
+                "data",
+                "privacy",
+                "erasure",
+                "consent"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-057",
+        "category": "general_conversation",
+        "input": "Explain what an audit opinion is and what an unqualified opinion means.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "audit",
+                "unqualified",
+                "financial statements",
+                "fairly"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-058",
+        "category": "general_conversation",
+        "input": "What is a Service Level Agreement (SLA) uptime guarantee and how is downtime credited?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "SLA",
+                "uptime",
+                "availability",
+                "service credit"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-059",
+        "category": "general_conversation",
+        "input": "Explain the concept of depreciation and amortization in accounting.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "depreciation",
+                "amortization",
+                "tangible",
+                "intangible",
+                "allocation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-060",
+        "category": "general_conversation",
+        "input": "What is intellectual property work-for-hire in independent contractor agreements?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "work-for-hire",
+                "ownership",
+                "copyright",
+                "contractor"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-061",
+        "category": "general_conversation",
+        "input": "Explain what SaaS Net Revenue Retention (NRR) is and why it matters to investors.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "NRR",
+                "expansion",
+                "churn",
+                "retention",
+                "revenue"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-062",
+        "category": "general_conversation",
+        "input": "What does governing law vs jurisdiction mean in dispute resolution clauses?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "governing law",
+                "jurisdiction",
+                "court",
+                "statute",
+                "dispute"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-063",
+        "category": "general_conversation",
+        "input": "Explain how accounts receivable factoring works for small businesses.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "factoring",
+                "invoices",
+                "cash",
+                "discount",
+                "receivable"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-064",
+        "category": "general_conversation",
+        "input": "What is an escrow account and when is it used in mergers and acquisitions?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "escrow",
+                "third-party",
+                "holding",
+                "indemnification",
+                "funds"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-065",
+        "category": "general_conversation",
+        "input": "Explain what a warrant is in startup venture finance.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "warrant",
+                "equity",
+                "shares",
+                "strike price",
+                "investment"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-066",
+        "category": "general_conversation",
+        "input": "What is product-market fit and what metrics indicate a startup has achieved it?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "product-market fit",
+                "retention",
+                "growth",
+                "demand",
+                "NPS"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-067",
+        "category": "general_conversation",
+        "input": "Explain the difference between arbitration and mediation in legal disputes.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "arbitration",
+                "mediation",
+                "binding",
+                "neutral",
+                "settlement"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-068",
+        "category": "general_conversation",
+        "input": "What is a debt-to-equity ratio and what does a high ratio signify?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "debt-to-equity",
+                "leverage",
+                "liabilities",
+                "solvency"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-069",
+        "category": "general_conversation",
+        "input": "Explain what trademark dilution means compared to trademark infringement.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "trademark",
+                "dilution",
+                "blurring",
+                "tarnishment",
+                "brand"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-070",
+        "category": "general_conversation",
+        "input": "What is customer acquisition cost (CAC) and how does it relate to LTV?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "CAC",
+                "LTV",
+                "acquisition",
+                "lifetime value",
+                "ratio"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-071",
+        "category": "general_conversation",
+        "input": "Explain the purpose of a termination for convenience clause.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "termination for convenience",
+                "notice",
+                "without cause",
+                "exit"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-072",
+        "category": "general_conversation",
+        "input": "What is an income statement and how does it differ from a cash flow statement?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "income statement",
+                "cash flow",
+                "revenue",
+                "accrual",
+                "period"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-073",
+        "category": "general_conversation",
+        "input": "Explain what a promissory note is in commercial transactions.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "promissory note",
+                "debt",
+                "promise",
+                "repayment",
+                "principal"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-074",
+        "category": "general_conversation",
+        "input": "What is a data processing addendum (DPA) under European data protection laws?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "DPA",
+                "processor",
+                "controller",
+                "GDPR",
+                "personal data"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-075",
+        "category": "general_conversation",
+        "input": "Explain the difference between tangible and intangible assets on a balance sheet.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "tangible",
+                "intangible",
+                "physical",
+                "goodwill",
+                "patents"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-076",
+        "category": "general_conversation",
+        "input": "What is an accredited investor under SEC regulations?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "accredited investor",
+                "net worth",
+                "income",
+                "SEC",
+                "exemption"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-077",
+        "category": "general_conversation",
+        "input": "Explain what a right of first refusal (ROFR) means in shareholder agreements.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "ROFR",
+                "shares",
+                "purchase",
+                "matching",
+                "offer"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-078",
+        "category": "general_conversation",
+        "input": "What is compound interest and how does it differ from simple interest?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "compound interest",
+                "exponential",
+                "principal",
+                "accumulated"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-079",
+        "category": "general_conversation",
+        "input": "Explain the principle of caveat emptor in commercial sales transactions.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "caveat emptor",
+                "buyer beware",
+                "inspection",
+                "warranty"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-080",
+        "category": "general_conversation",
+        "input": "What is an enterprise software license seat model versus usage-based pricing?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "seat-based",
+                "usage-based",
+                "consumption",
+                "license",
+                "scale"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-081",
+        "category": "general_conversation",
+        "input": "Write a professional, polite email declining a vendor partnership proposal.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Thank you",
+                "regret",
+                "not a fit",
+                "future",
+                "appreciate"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-082",
+        "category": "general_conversation",
+        "input": "Rewrite this text to be polite and executive-ready: \"We cant do this now because our servers are completely on fire.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "experiencing technical difficulties",
+                "infrastructure",
+                "priority",
+                "resolution"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-083",
+        "category": "general_conversation",
+        "input": "Write a 3-sentence announcement for a software product v2.0 release.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "excited to announce",
+                "version 2.0",
+                "features",
+                "performance"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-084",
+        "category": "general_conversation",
+        "input": "Draft a LinkedIn post announcing a new round of seed funding for an AI startup.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "thrilled to announce",
+                "seed funding",
+                "investors",
+                "mission",
+                "growth"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-085",
+        "category": "general_conversation",
+        "input": "Rewrite this harsh customer support response to be empathetic: \"You broke the setting yourself so its not our problem.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "understand your frustration",
+                "guide you",
+                "resolve",
+                "settings",
+                "assist"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-086",
+        "category": "general_conversation",
+        "input": "Write an elevator pitch for DocVer: an enterprise multi-model document verification SaaS.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "DocVer",
+                "document verification",
+                "comparison",
+                "accuracy",
+                "zero storage"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-087",
+        "category": "general_conversation",
+        "input": "Draft a concise weekly status update for an engineering sprint to executive leadership.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "sprint",
+                "milestones",
+                "deliverables",
+                "on track",
+                "next steps"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-088",
+        "category": "general_conversation",
+        "input": "Rewrite this passive voice sentence into active voice: \"The contract was signed by Jonathan Miller.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Jonathan Miller signed the contract"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-089",
+        "category": "general_conversation",
+        "input": "Write a welcome email for newly onboarded enterprise customers.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Welcome",
+                "getting started",
+                "team",
+                "support",
+                "resources"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-090",
+        "category": "general_conversation",
+        "input": "Rewrite this informal memo into a formal compliance policy notice: \"Hey guys stop sharing passwords on Slack.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "prohibited",
+                "credentials",
+                "security policy",
+                "compliance",
+                "passwords"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-091",
+        "category": "general_conversation",
+        "input": "Write a 2-sentence summary explaining why document version control prevents legal liabilities.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "version control",
+                "discrepancies",
+                "liability",
+                "accuracy"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-092",
+        "category": "general_conversation",
+        "input": "Draft a job description snippet for a Senior Full-Stack Engineer at an AI company.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Full-Stack",
+                "Next.js",
+                "APIs",
+                "collaboration",
+                "architecture"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-093",
+        "category": "general_conversation",
+        "input": "Rewrite this wordy text to be concise: \"In light of the fact that the server was subjected to a sudden power outage, it became necessary for our team to initiate a reboot.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "The server was rebooted following a sudden power outage."
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-094",
+        "category": "general_conversation",
+        "input": "Write a diplomatic email asking a client for payment on an invoice 14 days overdue.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "friendly reminder",
+                "invoice",
+                "overdue",
+                "assistance",
+                "payment"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-095",
+        "category": "general_conversation",
+        "input": "Draft an apology email to customers for a 30-minute unscheduled system downtime.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "sincerely apologize",
+                "downtime",
+                "restored",
+                "prevent",
+                "reliability"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-096",
+        "category": "general_conversation",
+        "input": "Rewrite this technical error into user-friendly copy: \"Fatal Error: PDOConnection failed with errno 2002.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "unable to connect",
+                "database",
+                "try again",
+                "working to resolve"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-097",
+        "category": "general_conversation",
+        "input": "Write a concise release note for an update that improved document comparison speed by 40%.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "improved comparison speed",
+                "40%",
+                "performance",
+                "faster"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-098",
+        "category": "general_conversation",
+        "input": "Draft a memo announcing the implementation of mandatory two-factor authentication (2FA).",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "security",
+                "two-factor authentication",
+                "2FA",
+                "mandatory",
+                "protection"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-099",
+        "category": "general_conversation",
+        "input": "Rewrite this sentence for clarity and simplicity: \"Notwithstanding aforementioned stipulations, parties must expedite mutually agreed upon outcomes.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Parties must quickly deliver agreed results."
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-100",
+        "category": "general_conversation",
+        "input": "Write a congratulatory message to a team member who just shipped a major platform feature.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Congratulations",
+                "hard work",
+                "dedication",
+                "impact",
+                "shipped"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-101",
+        "category": "general_conversation",
+        "input": "Draft a project kick-off email to cross-functional stakeholders.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "kick-off",
+                "project",
+                "objectives",
+                "timeline",
+                "stakeholders"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-102",
+        "category": "general_conversation",
+        "input": "Rewrite this negative customer feedback reply to be constructive and solution-oriented.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "appreciate your feedback",
+                "committed to improving",
+                "investigate",
+                "resolve"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-103",
+        "category": "general_conversation",
+        "input": "Write a 3-bullet guideline for writing clean, readable code in pull requests.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "readable",
+                "tests",
+                "commits",
+                "documentation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-104",
+        "category": "general_conversation",
+        "input": "Draft a formal request for quotation (RFQ) email to a cloud infrastructure vendor.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Request for Quotation",
+                "specifications",
+                "pricing",
+                "infrastructure"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-105",
+        "category": "general_conversation",
+        "input": "Rewrite this text to eliminate jargon: \"We leverage synergistic paradigms to maximize our core deliverables.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "We work together to deliver great results."
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-106",
+        "category": "general_conversation",
+        "input": "Write a brief post-mortem summary for a minor staging environment disruption.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "incident",
+                "root cause",
+                "resolution",
+                "corrective actions"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-107",
+        "category": "general_conversation",
+        "input": "Draft an email declining an invitation to speak at a conference due to scheduling conflicts.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "honored",
+                "decline",
+                "schedule conflict",
+                "future opportunity"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-108",
+        "category": "general_conversation",
+        "input": "Rewrite this text to sound confident and persuasive: \"I kind of think maybe our tool could possibly help you.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Our tool will streamline your workflow and deliver measurable value."
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-109",
+        "category": "general_conversation",
+        "input": "Write a thank-you note to a customer who participated in an extensive user research interview.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "thank you",
+                "insights",
+                "feedback",
+                "improving our platform"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-110",
+        "category": "general_conversation",
+        "input": "Draft a reminder to team members to submit their quarterly goals and OKRs.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "OKRs",
+                "quarterly goals",
+                "deadline",
+                "alignment",
+                "submit"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-111",
+        "category": "general_conversation",
+        "input": "Rewrite this ambiguous instruction to be specific: \"Fix the thing on the page so it works better.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Update the submit button on the upload form to handle timeouts gracefully."
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-112",
+        "category": "general_conversation",
+        "input": "Write a 2-sentence value proposition for automated document compliance audits.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Automated document compliance audits",
+                "risk",
+                "accuracy",
+                "manual effort"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-113",
+        "category": "general_conversation",
+        "input": "Draft a gentle pushback email to a product manager who requested an unrealistic deadline.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "appreciate the urgency",
+                "scope",
+                "quality",
+                "realistic timeline",
+                "trade-offs"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-114",
+        "category": "general_conversation",
+        "input": "Rewrite this customer review response acknowledging a 5-star rating.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Thank you for the 5-star review",
+                "delighted",
+                "support",
+                "appreciate"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-115",
+        "category": "general_conversation",
+        "input": "Write a concise definition of prompt injection security for non-technical leadership.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "prompt injection",
+                "security",
+                "malicious instructions",
+                "safeguards"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-116",
+        "category": "general_conversation",
+        "input": "Draft an announcement for an upcoming scheduled maintenance window.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "scheduled maintenance",
+                "window",
+                "downtime",
+                "upgrades",
+                "apologize"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-117",
+        "category": "general_conversation",
+        "input": "Rewrite this defensive reply into a professional response: \"You should have read the documentation before emailing us.\"",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "We are happy to help, and you can also find detailed steps in our documentation."
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-118",
+        "category": "general_conversation",
+        "input": "Write a brief introduction for a whitepaper on multi-model AI failover architectures.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "multi-model",
+                "resilience",
+                "failover",
+                "latency",
+                "reliability"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-119",
+        "category": "general_conversation",
+        "input": "Draft a note to a client confirming receipt of executed contracts and next steps.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "receipt",
+                "executed contract",
+                "onboarding",
+                "next steps"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-120",
+        "category": "general_conversation",
+        "input": "Rewrite this overly casual Slack message into a professional executive summary bullet.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Completed core indexing optimization",
+                "performance",
+                "milestone"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-121",
+        "category": "general_conversation",
+        "input": "If a server processes 1,200 requests per minute with an average latency of 50ms, how many requests does it process per second?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "20",
+                "per second",
+                "1200 \/ 60"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-122",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 creative name ideas for an AI-powered document verification platform.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "name",
+                "ideas",
+                "verification",
+                "Doc"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-123",
+        "category": "general_conversation",
+        "input": "A team of 5 engineers completes 30 story points in a 2-week sprint. What is the average velocity per engineer per week?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "3",
+                "points per engineer per week",
+                "30 \/ (5 * 2)"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-124",
+        "category": "general_conversation",
+        "input": "Brainstorm 5 essential metrics for monitoring the health of a production AI API.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "latency",
+                "error rate",
+                "token usage",
+                "cost",
+                "throughput"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-125",
+        "category": "general_conversation",
+        "input": "Solve this logic puzzle: If all A are B, and some B are C, are all A necessarily C? Explain.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "No",
+                "not necessarily",
+                "some B are C does not mean all B are C"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-126",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 high-impact feature ideas for a document comparison tool.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "diff",
+                "table",
+                "export",
+                "citations",
+                "security"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-127",
+        "category": "general_conversation",
+        "input": "If an API has an SLA guarantee of 99.9% uptime, what is the maximum allowed downtime in a 30-day month in minutes?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "43.2",
+                "minutes",
+                "downtime"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-128",
+        "category": "general_conversation",
+        "input": "Brainstorm 3 effective strategies to reduce LLM hallucination in enterprise RAG pipelines.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "grounding",
+                "chunking",
+                "citations",
+                "temperature",
+                "verification"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-129",
+        "category": "general_conversation",
+        "input": "A company has $100,000 in monthly revenue and a 20% profit margin. If expenses increase by $5,000, what is the new profit margin?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "15%",
+                "15,000",
+                "margin"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-130",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 questions an enterprise legal team will ask before adopting a cloud AI tool.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "data privacy",
+                "retention",
+                "SOC 2",
+                "training",
+                "encryption"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-131",
+        "category": "general_conversation",
+        "input": "Solve: A file is 250 MB. At a transfer rate of 25 MB\/s, how long does the upload take?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "10 seconds",
+                "10",
+                "250 \/ 25"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-132",
+        "category": "general_conversation",
+        "input": "Brainstorm 5 edge cases to test for a PDF document parser.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "scanned",
+                "corrupted",
+                "password protected",
+                "empty",
+                "tables"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-133",
+        "category": "general_conversation",
+        "input": "If prompt tokens cost $0.15 per million and completion tokens cost $0.60 per million, calculate the cost of 2,000,000 prompt tokens and 500,000 completion tokens.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "$0.60",
+                "$0.30",
+                "total",
+                "$0.60"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-134",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 UX improvements for viewing side-by-side legal document comparisons on mobile screens.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "toggle",
+                "diff view",
+                "collapsible",
+                "summary",
+                "swipe"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-135",
+        "category": "general_conversation",
+        "input": "Explain the birthday paradox: why does it only take 23 people for a 50% chance of a shared birthday?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "probability",
+                "pairs",
+                "23",
+                "50%",
+                "combinations"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-136",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 ways to optimize database query performance for large text chunk lookups.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "indexing",
+                "caching",
+                "vector index",
+                "pagination"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-137",
+        "category": "general_conversation",
+        "input": "If a subscription costs $49\/month with an annual plan at $470\/year, what percentage discount does the annual plan offer?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "20%",
+                "discount",
+                "588",
+                "470"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-138",
+        "category": "general_conversation",
+        "input": "Brainstorm 3 proactive security measures against prompt injection in document QA systems.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "sanitization",
+                "delimiters",
+                "system instructions",
+                "guards"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-139",
+        "category": "general_conversation",
+        "input": "Solve this sequence puzzle: 2, 6, 12, 20, 30, what comes next and what is the rule?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "42",
+                "n*(n+1)",
+                "difference increases by 2"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-140",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 key topics to cover in an employee cybersecurity awareness training.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "phishing",
+                "passwords",
+                "2FA",
+                "data sharing",
+                "social engineering"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-141",
+        "category": "general_conversation",
+        "input": "If a database table has 10,000,000 rows and a binary search index lookup takes O(log2 N) comparisons, how many comparisons are needed at most?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "24",
+                "comparisons",
+                "log2"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-142",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 onboarding tips for new software developers joining an established codebase.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "documentation",
+                "local setup",
+                "pair programming",
+                "small PR"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-143",
+        "category": "general_conversation",
+        "input": "Calculate the compounded return on a $10,000 investment growing at 8% annually after 2 years.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "$11,664",
+                "1.08",
+                "compound"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-144",
+        "category": "general_conversation",
+        "input": "Brainstorm 5 essential items to include in an AI Incident Response Plan.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "containment",
+                "communication",
+                "root cause",
+                "rollback",
+                "post-mortem"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-145",
+        "category": "general_conversation",
+        "input": "What is the Monty Hall problem and why should the contestant always switch doors?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Monty Hall",
+                "switch",
+                "2\/3",
+                "probability",
+                "doors"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-146",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 ways a SaaS product can reduce customer churn during onboarding.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "interactive tours",
+                "customer success",
+                "templates",
+                "fast time-to-value"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-147",
+        "category": "general_conversation",
+        "input": "If 3 developers build a feature in 12 days, how long would it take 4 developers assuming linear scaling?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "9 days",
+                "36 developer-days",
+                "9"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-148",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 techniques to handle rate-limiting gracefully in API client libraries.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "exponential backoff",
+                "jitter",
+                "queue",
+                "circuit breaker"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-149",
+        "category": "general_conversation",
+        "input": "Solve: What is the sum of integers from 1 to 100 using Gauss formula?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "5050",
+                "n*(n+1)\/2",
+                "5,050"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-150",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 ways to preserve user privacy when indexing confidential enterprise documents.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "zero-retention",
+                "ephemeral storage",
+                "encryption",
+                "role-based access"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-151",
+        "category": "general_conversation",
+        "input": "If an application handles 50,000 requests with 25 errors, what is the error rate percentage?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "0.05%",
+                "error rate",
+                "25 \/ 50000"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-152",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 checklist items for a production cloud infrastructure migration.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "data backup",
+                "DNS TTL",
+                "staging rehearsal",
+                "rollback plan"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-153",
+        "category": "general_conversation",
+        "input": "Explain why correlation does not imply causation with a clear statistical example.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "correlation",
+                "causation",
+                "confounding variable",
+                "ice cream"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-154",
+        "category": "general_conversation",
+        "input": "Brainstorm 3 practical uses of synthetic evaluation datasets in AI quality engineering.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "benchmarking",
+                "edge case discovery",
+                "regression testing"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-155",
+        "category": "general_conversation",
+        "input": "If a company has a 95% annual customer retention rate, what is its annual churn rate?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "5%",
+                "churn rate",
+                "100% - 95%"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-156",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 UX patterns to signal AI generation uncertainty to end users.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "confidence score",
+                "citation links",
+                "highlighting",
+                "warning pill"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-157",
+        "category": "general_conversation",
+        "input": "Solve: What is the median of this dataset: [12, 5, 22, 30, 7, 18, 9]?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "12",
+                "sorted: 5, 7, 9, 12, 18, 22, 30"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-158",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 criteria for evaluating whether a task should be automated or kept manual.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "frequency",
+                "error risk",
+                "complexity",
+                "ROI"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-159",
+        "category": "general_conversation",
+        "input": "If a cache has a 92% hit rate and receives 200,000 requests, how many requests result in a cache miss?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "16,000",
+                "misses",
+                "8% of 200,000"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-160",
+        "category": "general_conversation",
+        "input": "Brainstorm 4 non-functional requirements critical for enterprise legal SaaS applications.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "high availability",
+                "low latency",
+                "SOC 2 security",
+                "audit logging"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-161",
+        "category": "general_conversation",
+        "input": "Explain how photosynthesis converts sunlight into chemical energy.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "photosynthesis",
+                "chlorophyll",
+                "glucose",
+                "sunlight",
+                "carbon dioxide"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-162",
+        "category": "general_conversation",
+        "input": "What is the theory of comparative advantage in international trade?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "comparative advantage",
+                "opportunity cost",
+                "trade",
+                "efficiency"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-163",
+        "category": "general_conversation",
+        "input": "Explain the difference between weather and climate.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "weather",
+                "climate",
+                "short-term",
+                "long-term",
+                "atmosphere"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-164",
+        "category": "general_conversation",
+        "input": "What is Occam's Razor and how is it applied in scientific reasoning?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Occam's Razor",
+                "simpler",
+                "assumptions",
+                "hypothesis"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-165",
+        "category": "general_conversation",
+        "input": "Explain how mRNA vaccines work to train the human immune system.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "mRNA",
+                "spike protein",
+                "antibodies",
+                "immune response",
+                "ribosome"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-166",
+        "category": "general_conversation",
+        "input": "What is inflation and what are the main causes according to macroeconomics?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "inflation",
+                "purchasing power",
+                "demand-pull",
+                "cost-push",
+                "money supply"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-167",
+        "category": "general_conversation",
+        "input": "Explain the concept of entropy in thermodynamics and why it increases over time.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "entropy",
+                "thermodynamics",
+                "disorder",
+                "second law"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-168",
+        "category": "general_conversation",
+        "input": "What is the tragedy of the commons and what are modern examples?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "tragedy of the commons",
+                "shared resource",
+                "depletion",
+                "overconsumption"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-169",
+        "category": "general_conversation",
+        "input": "Explain the difference between inductive and deductive reasoning.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "inductive",
+                "deductive",
+                "specific to general",
+                "general to specific",
+                "logic"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-170",
+        "category": "general_conversation",
+        "input": "How does the greenhouse effect warm the Earth's surface?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "greenhouse effect",
+                "infrared",
+                "atmosphere",
+                "carbon dioxide",
+                "heat"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-171",
+        "category": "general_conversation",
+        "input": "What is confirmation bias and how does it affect decision-making?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "confirmation bias",
+                "evidence",
+                "beliefs",
+                "cognitive bias"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-172",
+        "category": "general_conversation",
+        "input": "Explain how sound waves travel through different mediums like air and water.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "sound waves",
+                "medium",
+                "vibration",
+                "density",
+                "compression"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-173",
+        "category": "general_conversation",
+        "input": "What is the prisoner's dilemma in game theory and what is the Nash equilibrium?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "prisoner's dilemma",
+                "game theory",
+                "cooperation",
+                "Nash equilibrium",
+                "defect"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-174",
+        "category": "general_conversation",
+        "input": "Explain how airplanes generate aerodynamic lift.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "aerodynamic lift",
+                "airfoil",
+                "pressure",
+                "Bernoulli",
+                "wings"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-175",
+        "category": "general_conversation",
+        "input": "What is the difference between monetary policy and fiscal policy?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "monetary policy",
+                "fiscal policy",
+                "central bank",
+                "government",
+                "interest rates",
+                "taxes"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-176",
+        "category": "general_conversation",
+        "input": "Explain what a black hole event horizon is in astrophysics.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "black hole",
+                "event horizon",
+                "gravity",
+                "light",
+                "escape velocity"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-177",
+        "category": "general_conversation",
+        "input": "What is the placebo effect and why are double-blind studies necessary?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "placebo",
+                "double-blind",
+                "control group",
+                "bias",
+                "clinical trial"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-178",
+        "category": "general_conversation",
+        "input": "Explain how the GPS navigation system calculates a receiver's coordinates on Earth.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "GPS",
+                "satellites",
+                "trilateration",
+                "atomic clock",
+                "signals"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-179",
+        "category": "general_conversation",
+        "input": "What is the law of diminishing returns in economic production?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "diminishing returns",
+                "marginal output",
+                "inputs",
+                "production"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-180",
+        "category": "general_conversation",
+        "input": "Explain how human DNA encodes genetic instructions via nucleotide base pairs.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "DNA",
+                "nucleotides",
+                "adenine",
+                "thymine",
+                "cytosine",
+                "guanine",
+                "protein"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-181",
+        "category": "general_conversation",
+        "input": "What is cognitive dissonance in social psychology?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "cognitive dissonance",
+                "contradictory",
+                "beliefs",
+                "discomfort",
+                "attitude"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-182",
+        "category": "general_conversation",
+        "input": "Explain the difference between nuclear fission and nuclear fusion.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "fission",
+                "fusion",
+                "splitting",
+                "combining",
+                "nuclei",
+                "energy"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-183",
+        "category": "general_conversation",
+        "input": "What is supply and demand equilibrium in microeconomics?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "supply and demand",
+                "equilibrium",
+                "price",
+                "quantity",
+                "market"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-184",
+        "category": "general_conversation",
+        "input": "Explain how optical fiber cables transmit high-speed data using light.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "fiber optic",
+                "total internal reflection",
+                "light",
+                "glass",
+                "bandwidth"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-185",
+        "category": "general_conversation",
+        "input": "What is the difference between renewable and non-renewable energy sources?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "renewable",
+                "non-renewable",
+                "solar",
+                "fossil fuels",
+                "depletion"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-186",
+        "category": "general_conversation",
+        "input": "Explain what plate tectonics is and how continental drift causes earthquakes.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "plate tectonics",
+                "fault lines",
+                "earthquakes",
+                "crust",
+                "mantle"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-187",
+        "category": "general_conversation",
+        "input": "What is the Doppler effect and where is it observed in daily life?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Doppler effect",
+                "frequency",
+                "wavelength",
+                "siren",
+                "pitch"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-188",
+        "category": "general_conversation",
+        "input": "Explain the concept of opportunity cost with an everyday spending choice.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "opportunity cost",
+                "alternative",
+                "foregone",
+                "trade-off",
+                "choice"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-189",
+        "category": "general_conversation",
+        "input": "What is quantum superposition and how does it relate to qubits?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "superposition",
+                "qubits",
+                "0 and 1",
+                "quantum",
+                "states"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-190",
+        "category": "general_conversation",
+        "input": "Explain how the human eye focuses light onto the retina.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "cornea",
+                "lens",
+                "retina",
+                "focus",
+                "photoreceptors"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-191",
+        "category": "general_conversation",
+        "input": "What is an economic recession and what commonly triggers it?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "recession",
+                "GDP decline",
+                "unemployment",
+                "contraction",
+                "cycles"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-192",
+        "category": "general_conversation",
+        "input": "Explain how antibiotics kill bacteria without harming human cells.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "antibiotics",
+                "bacteria",
+                "cell wall",
+                "human cells",
+                "target"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-193",
+        "category": "general_conversation",
+        "input": "What is game theory and what are some common applications?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "game theory",
+                "strategic",
+                "players",
+                "payoffs",
+                "economics"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-194",
+        "category": "general_conversation",
+        "input": "Explain how ocean tides are caused by gravitational forces of the Moon and Sun.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "tides",
+                "gravity",
+                "Moon",
+                "Sun",
+                "bulge",
+                "high tide"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-195",
+        "category": "general_conversation",
+        "input": "What is the Pareto Principle (80\/20 rule) and how is it used in business management?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "Pareto Principle",
+                "80\/20",
+                "effects",
+                "causes",
+                "prioritization"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-196",
+        "category": "general_conversation",
+        "input": "Explain how semiconductors conduct electricity and why silicon is widely used.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "semiconductor",
+                "silicon",
+                "doping",
+                "conductivity",
+                "electrons"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-197",
+        "category": "general_conversation",
+        "input": "What is natural selection in evolutionary biology?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "natural selection",
+                "survival",
+                "adaptation",
+                "traits",
+                "reproduction"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-198",
+        "category": "general_conversation",
+        "input": "Explain the concept of liquidity in financial markets.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "liquidity",
+                "cash",
+                "buying and selling",
+                "discount",
+                "market depth"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-199",
+        "category": "general_conversation",
+        "input": "What causes the seasons on Earth throughout the year?",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "axial tilt",
+                "23.5 degrees",
+                "orbit",
+                "sunlight",
+                "seasons"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    },
+    {
+        "id": "GEN-200",
+        "category": "general_conversation",
+        "input": "Explain what a double-blind peer review is in academic scientific publishing.",
+        "relevant_context": null,
+        "document_references": [],
+        "expected_task": "general_chat",
+        "expected_answer": {
+            "contains": [
+                "peer review",
+                "double-blind",
+                "anonymity",
+                "bias",
+                "evaluation"
+            ],
+            "not_contains": [
+                "upload document"
+            ],
+            "min_words": 15
+        },
+        "evaluation_method": "deterministic_contains",
+        "failure_category": "unnecessary_document_demand"
+    }
+]

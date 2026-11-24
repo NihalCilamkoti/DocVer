@@ -1,0 +1,37 @@
+DOCVER ENTERPRISE - TEAM ROLES AND RESPONSIBILITIES DIRECTORY
+Document Version: 2.4 | Classification: Internal | Department: Product & Engineering
+
+1. LEADERSHIP & ARCHITECTURE
+- Nihal Cilamkoti: Product Lead and Principal AI Architect.
+  * Primary Responsibilities: Overall product vision, multi-provider AI routing architecture, task intent classification design, zero-storage privacy compliance, and core algorithm oversight.
+  * Deliverables: System architecture specifications, weekly AI evaluation benchmarks, roadmap planning.
+  * Reports To: Executive Board.
+
+- Priya Sharma: Full-Stack Engineering Lead.
+  * Primary Responsibilities: Next.js frontend architecture, state management stores, real-time WebSocket communication, and Laravel API contract integration.
+  * Deliverables: UI component library, client state machines, responsive dashboard views.
+  * Reports To: Nihal Cilamkoti.
+
+2. INFRASTRUCTURE & SECURITY
+- Alex Mercer: Principal DevOps & Cloud Infrastructure Engineer.
+  * Primary Responsibilities: Kubernetes cluster management, ephemeral Redis indexing infrastructure, automated disk cleanup pipelines, and CI/CD deployment pipelines.
+  * Deliverables: Terraform infrastructure-as-code scripts, multi-region failover configuration, uptime monitoring.
+  * Reports To: Nihal Cilamkoti.
+
+- Samantha Reed: QA & Security Compliance Analyst.
+  * Primary Responsibilities: End-to-end regression test suite execution, SOC 2 Type II compliance audits, prompt injection security testing, and penetration test coordination.
+  * Deliverables: Weekly test regression reports, vulnerability assessment findings, audit logs.
+  * Reports To: Priya Sharma.
+
+3. DESIGN & USER EXPERIENCE
+- Marcus Vance: Senior UI/UX Designer.
+  * Primary Responsibilities: Design system tokens, interactive comparison diff views, side-by-side inspection layouts, and accessibility (WCAG 2.1 AA) compliance.
+  * Deliverables: Figma component libraries, prototype animations, user research session summaries.
+  * Reports To: Priya Sharma.
+
+4. TEAM CADENCE AND GOVERNANCE
+- Daily Standup: Monday through Friday at 09:30 AM EST.
+- Sprint Planning: Bi-weekly on Mondays at 11:00 AM EST.
+- Sprint Review & Retrospective: Bi-weekly on Fridays at 03:00 PM EST.
+- Architecture Review Board: Every Wednesday at 02:00 PM EST (Led by Nihal Cilamkoti).
+- Total Core Team Size: Five (5) active members.
